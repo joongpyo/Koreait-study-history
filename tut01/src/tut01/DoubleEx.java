@@ -1,3 +1,9 @@
+/*
+ 1.프로그램명 :  주민번호의 8번째 숫자를 이용하여 남자 여자를 표시하시오
+ 2.작성일자 : 23. 09. 08
+ 3.내용 : double 활용, %활용해서 if else, 삼항 연산자
+*/
+
 package tut01;
 
 public class DoubleEx {
