@@ -1,3 +1,10 @@
+/*
+프로그램명 : 로그인 프로그램
+작성일자 : 23. 09. 08
+작 성 자 : 신중표
+내   용 : char, String을 이용한 if else문 
+*/
+
 package tut01;
 
 public class CharEx {
