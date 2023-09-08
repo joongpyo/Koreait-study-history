@@ -1,2 +1,2 @@
 # OtherCpJava
-koreait java source
+koreaIt Practice java source
