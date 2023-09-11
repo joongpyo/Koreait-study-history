@@ -268,6 +268,162 @@ BooleanEx.java
 
 
 DoubleEx.java//
+
+
+
+
+
+
+오전 9:03 2023-09-11************************************************************************************
+
+1. 설치 
+(1) jdk, eclipse(intelli j)
+  - jdk download
+  -내 pc => 고급 => 환경설정 => JAVA_HOME (JDK 설치 폴더) - (C:\Program Files\Java\jdk-20)
+ 			  => path(javac, java 위치해 있는 폴더) (JDK설치폴더\bin)
+			       
+   www.oracle.com=> products => java=> 스크롤 내려서 밑에 있는 download java => window => x64 MSI installer
+
+
+ 
+- eclipse.org download : IDE 통합개발환경
+
+
+script : 끼워넣어서 사용하는 프로그램
+javascript, typescrip, 웹 프로그램 : html 안에 프로그래밍..
+
+middleware
+
+자바	<middleware>	저장(DB)
+			mail server
+jdk - developer
+jre - run
+
+
+
+
+2. 변수와 객체의 차이점
+   변수(하나)
+   객체(타입이 동일하거나 다른 여러 개의 데이터를 처리)
+
+
+   변수와 객체의 비슷한 점
+   변수든 객체든 선언하고 초기화 작업 필요 
+
+   객체는 선언과 초기화를 처리하는 방법으로 new(생성자) : String str = new String();
+   -> 반복문을 함께 사용
+
+* 외우기 ! : 1. num 정수를 선언하고 100이라는 값으로 초기화 하시오.   
+   int num; : 선언
+   num = 100; : 초기화
+   int num = 100; 선언과 초기화를 한번에 한 것*
+
+
+   String str;	      	
+   str = new String();    =>  String str = new String();
+
+
+
+---------------------
+PrintEx.java
+print();
+println();
+printf();
+
+정수 5와 8의 합을 출력하시오. 
+
+
+PrintEx2.java
+
+char 
+boolean
+
+--------------------------
+html
+로그인 -> 한 페이지에서만 정보를 유지 할 수 있음. 다른 페이지로 넘어가면 로그인이 끊김
+세션(연결), 쿠키 (투표), (아이디 저장 체크) => Ajax
+(Session) login
+
+
+
+================================
+IncDecEx.java
+
+1. operator : 부호
+Increment And Decrement Operator
+증감 연산자   // 통상 for문에서 주로 쓰임
+int a = 1; //+1
+int result = a + 1
+
+int result = a++;
+int result = ++a;
+
+int result = a--;
+int result = --a;
+
+sum = sum +i;
+
+sum += i;
+
+---------------------------------------
+산술 연산자
+Arithmetric Operator
++-*/%
+
+비교 연산자
+>, <, ==, != 결과는 true, false
+
+논리 연산자
+&&. ||  
+
+
+2. 변수의 타입
+  (1)기본형(primitive Type)
+    int a = 0;
+    double b = 0.0;
+    boolean c= false;
+
+String str = "";
+String 기본형, 참조형
+String str = null;
+
+회원가입 : Member.java > model, dto
+아이디 : 문자열
+비밀번호 : 문자열
+이름 : 문자열
+나이 : 문자열
+
+이메일주소 : 문자열
+
+for
+
+
+
+(2)참조형(Reference Type) : 반복문(for, 향상된for) //*잘모름*  
+  - 첫글자가 대문자로 시작...  ex) Interger, Double, Float, Char, Boolean
+			     객체
+    데이터를 묶음으로 처리하는 것..
+  - 배열(고정[], 동적<참조형 또는 객체>) : ArrayList(목록출력), HashMap(JSON)
+	       동적<Interger> 동적<Member> 
+  -초기화 null
+
+
+==================================
+1. 대입 연산자 Assignment operator
+int num = 10;
+num = num +2 => num += 2;
+
+AssignEx.java
+
+클래스 변수
+
+객체
+=> 변수X(필드, 멤버변수)
+=> 생성자(), 생성자(매개변수 = 파라미터 = parameter)
+=> getter() - 값을 가져올 때
+     setter() - 값을 저장할 때
+
+=> 추가적인 동작이 필요할 때는 메소드
    	
    
 
