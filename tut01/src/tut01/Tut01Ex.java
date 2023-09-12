@@ -15,26 +15,32 @@ public class Tut01Ex {
 		String db_userid = "koreait"; 
 		String db_passwd = "12345";
 		int point = 1000;
-		
+		int plusPnt = 100;
 		//로그인정보(db) : 입력
 		String userid = "koreait";
 		String passwd = "1235";
 	
 		
-		 
-		if(db_userid.equals(userid) && db_passwd.equals(passwd)) {
-			System.out.println(db_userid+"회원님 안녕하세요.\n마이페이지로 이동합니다.");
-			System.out.println((point += 100)+"점" ); //point = point + 100;
-		}
-		else {
-			System.out.println("로그인 정보를 확인하세요.\n회원가입 페이지로 이동합니다.");
-			System.out.println("보유한 포인트"+point+"점");
-		}
+//		 
+//		if(db_userid.equals(userid) && db_passwd.equals(passwd)) {
+//			System.out.println(db_userid+"회원님 안녕하세요.\n마이페이지로 이동합니다.");
+//			System.out.println((point += 100)+"점" ); //point = point + 100;
+//		}
+//		else {
+//			System.out.println("로그인 정보를 확인하세요.\n회원가입 페이지로 이동합니다.");
+//			System.out.println("보유한 포인트"+point+"점");
+//		}
 		
 
 		//타입 변수 = () ? "참" : "거짓";
 		//String login = (db_userid.equals(userid) && db_passwd.equals(passwd)) ? "성공" : "실패";
 		//System.out.println(login);
+		
+		
+		String login = (db_userid.equals(userid) && db_passwd.equals(passwd))  
+				? "로그인 성공\n마이페이지로 이동합니다.\n로그인 포인트 적립 "+plusPnt+"점!\n보유한 포인트 "+(point += plusPnt)+"점" 
+						: "로그인 실패.\n회원가입 페이지로 이동합니다.\n보유한 포인트 "+point+"점";
+		System.out.println(login);
 		
 		
 	}
