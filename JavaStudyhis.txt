@@ -696,6 +696,76 @@ github.com/zinny24/koreait/tree/main/java2
 git : 프로그램
 github : 저장소
 
-   
+
+
+
+
+
+
+
+
+오전 8:59 2023-09-15*******************************************************************************
+1. 다운로드
+
+www.oracle.com -> products -> java -> Download java now -> window -> x64 MSI Installer
+
+www.eclipse.org -> download -> download package -> Eclipse IDE for Java Developers -> window 
+
+
+JAVA_HOME 새로 생성
+JDK가 설치된 위치
+
+path 추가
+%JDK가 설치된 위치%\bin
+
+javac -> java -> java -version
+
+--------------------------------------------------------------------------------
+
+Test.java
+
+변수
+Var.java
+
+출력
+PrintEx.java
+print(); // 개행x
+println();
+printf();
+println(String.format()); 개행 + 출력형식
+
+--------------------------------------------
+변수나 객체의 값이 미치는 범위
+ScopeEX.java
+
+
+---------------------------
+
+비교연산자
+><, >=, <=, ==, != 결과가 true,
+
+조건문 : if, 삼항연산자
+
+OperEx.java
+
+OperEx2.java
+
+논리연산자 : true, false
+ AND 연산(조건1 && 조건2) : 조건 모두 만족해야 참
+OR 연산 (조건 1 || 조건2 : 조건 중 하나만 만족하면 참
+
+
+=============================
+
+for(조건1;조건2;조건3)
+
+조건1
+ while(조건2){
+	조건3
+}
+
+do ~ while(조건 만족하지 않아도 무조건 한번 실행)
+
+LoopEx.java
 
 
