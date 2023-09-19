@@ -865,3 +865,151 @@ WebEx.java - main o
 LoopEx.java
 
 
+
+
+
+
+오전 9:01 2023-09-19****************************************************************
+
+객체 구성 요소(생략 가능)
+1. 필드 : 공유변수
+2. 생성자 : 객체 생성시 처음 값 지정
+3. getter, setter : 필드에 저장 set, 출력
+4. 메소드 : disp();
+
+
+자바 데이터를 변수 삽입
+1. 변수 직접
+2. 생성자
+3. setter, getter
+
+객체 : 재사용 + 보안(캡슐화)
+int age = 20;
+
+처음 값을 어떻게 초기화, 100
+int i = 0;
+int i = 100;
+
+integer i = new Integer();
+integer i = new Integer(100);
+
+오버로딩 : 메소드 이름을 하나로 여러 메소드 만들기
+1. 생성자 오버로딩
+   파일 이름과 생성자이름 동일
+   리턴 타입x
+
+2. 메소드 오버로딩
+      
+
+
+1. 메소드 -> 객체(필드,생성자,오버로딩)
+2. 고정배열
+3. 객체
+4. 리스트
+
+Member[] = new Member[10];
+	
+계산기 : 이름 규칙, 변수이름 규칙 -> Cala.java CalsEx.java
+
+	model > Login.java, Member.java
+	dto
+	entity
+
+	Login 프로그램 : 이메일,  비밀번호
+	Login.java : 이메일, 비밀번호
+	LoginEx.java	
+
+	회원가입 : Member, Register
+	
+	객체 : 이름 나이 포인트
+	회원가입 진행하는 main()
+	Member.java
+	MemberEx.java
+
+---------------------------------------------
+
+tut05
+
+
+계산기 : CalEx.java
+
+
+
+
+--------------------------------
+프로그램에서 return
+1. 프로그램 끝 : 문장에 제일 마지막에 사용
+2. 값을 사용하는 쪽으로 보내 줄 때
+
+ if(0<1) {
+	return;
+}
+
+같은 파일 안에서는 
+
+public class 1번만
+
+class 파일이름2
+
+---------------------------
+LoginEx.java
+
+-----------------------------
+변수, 객체 초기화
+
+int i = 0; //처음 값으로 0을 출력
+int i = 100;
+
+프로그램이 시작될 때 : 생성자 (파일이름과 동일, return 없어야함)
+Login l = new Login(); //객체에 빈 값을 저장
+Login l = new Login("코리아아이티 아카데미");
+Login l = new Login(100,200);
+Login l = new Login("koreait","1234");
+Login l = new Login("koreait","1234",20);
+
+Login l = new Login(); //default생성자 -> 생략 가능
+ConstEx.java
+
+this : 현재 페이지
+super : 부모페이지
+
+this()
+
+----------------------------------------------------------------------
+1. 자바에서 필드에 값을 저장하는 방법
+  - 직접 필드에 저장 x 보안때문에
+  
+  RegisterEx.java this(), this
+	
+  - 생성자를 이용해서 저장
+  - getter,setter 이용해서 저장
+
+BoardEx.java
+필드 생성
+set 저장, get 출력
+
+public void set필드명(String userid){
+	this.필드명 =  매개변수;
+}
+
+public String get필드명(){
+	return 필드명;
+} 
+
+
+
+------------------------------------
+파일 분리해서
+1. 객체파일 : Login2.java
+
+2. 실행파일 Login2Ex.java
+
+필드
+이메일, 비번, 로그인 시간
+
+출력코드
+로그인 정보를 출력합니다. > 생성자
+이메일, 비번 저장 setter 
+이메일, 비번, 로그인 시간을 출력할때는 getter
+toString 메소드를 이용해서 화면에 출력
+
