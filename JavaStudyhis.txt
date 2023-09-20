@@ -1013,3 +1013,130 @@ public String get필드명(){
 이메일, 비번, 로그인 시간을 출력할때는 getter
 toString 메소드를 이용해서 화면에 출력
 
+
+
+
+
+
+오전 8:59 2023-09-20***********************************************************
+
+묶음 : 객체 - 타입이 다르고 많은 데이터를 이름 하나로
+
+객체에 데이터를 저장하는 방식
+
+1. 필드에 직접(x)
+2. 생성자를 통해서 저장
+3.getter, setter를 이용
+
+
+고정[타입] : 갯수 정하고 작업
+
+
+동적<참조타입> : 처음 갯수는 정해져 있지만 자동으로 공간을 늘리고 줄임
+List 순서가 있는 배열
+- ArrayList, Vector
+List a = new ArrayList
+
+map
+- Hashmap : 순서가 없는 동적배열 : passwd : "1234", userid : "koreait" 
+
+
+int i 
+Member m
+
+[
+	{
+	String, int, double
+	},
+	{
+	String, int, double
+	}
+]
+Object O P
+객체
+
+배열
+쓰는 방법
+1. int[] num = null; //초기화
+   num = int[10];
+  *이거만 쓴다고 보면됨 int[] num = new int[];  //검색속도 빠름
+   
+    1번째 회원정보
+   private String userid;
+   private String passwd;
+   private int age;
+
+    2번째 회원정보
+   private String userid;
+   private String passwd;
+   private int age;
+
+    3번째 회원정보
+   private String userid;
+   private String passwd;
+   private int age;  
+
+   Register[] r = new Register[3];
+   
+  
+
+2. int[] num = new int[] {1,2,3,4,5,}; - 메소드형
+	public int add(int [] num){
+}
+
+3. int[] num= {1,2,3,4,5}; - 축약형
+
+tut06
+
+ArrEx01.java
+
+ArrEx2.java
+
+ArrEx03.java
+
+객체 지향 언어의 기본
+값      동작
+변수   메소드()
+
+합계, 평균 class = > cal
+
+같은 파일에서 class가 여러개 일때 
+public class는 한번만 존재해야함
+
+----------------------------------------------------------------------
+UsersEx.java
+필드 : 아이디, 비밀번호
+생성자 
+getter, setter
+
+객체는 저장하는 용도, 출력하는 용도
+
+회원가입 : 1배열 ~ 3배열
+필드, 생성자, getter, setter
+
+변수 사용하기 전 변수 초기화
+int num = 0;
+
+객체도 사용하기전 초기화 - > 생성자
+Users u = new Users();
+
+객체에 데이터 주입
+필드 x
+생성자 : default 생성자
+파라미터가 없는 생성자는 없어도 실행
+
+
+
+생성자 이름은 같지만
+매개변수, 타입이 다를 때  - 생성자 오버로딩
+Users user = <- 초기화 아님 
+new Users(); <- 초기화임
+
+
+getter, setter
+
+
+-----------------------------------------------
+객체 = 덩어리
+
+UserEx2.java
