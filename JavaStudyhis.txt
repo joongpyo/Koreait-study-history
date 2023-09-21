@@ -1140,3 +1140,87 @@ getter, setter
 객체 = 덩어리
 
 UserEx2.java
+
+
+
+
+
+
+
+
+오전 9:10 2023-09-21**************************************************************
+폰트
+fonts.google.com  A1, Noto Sans
+		     roboto, popins 
+
+fonsawesome.com
+
+사진
+unsplash.com
+
+------------------------------------
+tut07
+RegisterEx.java
+
+객체 : vo, dto, entity, model
+메소드 : dao > RegisterDao.java
+
+dto > Register.java -> 객체 생성
+
+1. 객체 + 배열 = 회원가입[3]
+2. 필드
+   이메일
+   비밀번호
+   이름
+
+3. 생성자를 통해서 저장
+4. 회원수 출력
+   회원 목록 출력
+
+생성자, getter,setter 저장하려면 => 생성자로 초기화
+
+arr[i] = new Register();
+
+동적배열 초기화
+list.add(new Register())
+
+값 -> 초기화 + set객체 -> db,hd 
+
+----------------------------------------------------
+Article.java
+필드
+번호, 제목, 조회수, 등록일
+
+ArticleEx.java
+
+-----------------------------
+scoresEx.java
+
+<출력화면>
+1. 학생수 | 2. 점수입력 | 3. 점수출력 | 4. 평균 | 5. 최고점수 | 6. 종료
+
+ package dao
+ScoresDao.java
+
+model,vo , dto
+
+---------------
+emp
+EmployeesEx.java - main
+
+- service
+  EmployeeSrv.java
+- vo
+  Employee.java
+
+객체 empID
+db emp_id
+
+필드 만들기
+
+사번 -> 문자열 "900900001" -> num, id, emp_id;
+부서 -> 문자열 -> buseo, depart
+이름 -> 문자열  -> name, emp_name
+급여 -> 정수 -> emp_salary, money
+입사일 -> 날짜 -> startDate
+퇴사일 -> 날짜 -> endDate
