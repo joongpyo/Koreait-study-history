@@ -1271,3 +1271,90 @@ ShopEx.java
 ----------------------------------
 1. 회원가입 : Member.java, MemberDao.java, MemberEx.java
  입력, 출력, 삭제, 검색
+
+
+
+
+
+
+
+
+
+
+
+
+
+오전 8:59 2023-09-25***********************************************
+
+List : 순서 - 중복값 허용
+set : 중복값 허용x
+Map : 중복키 허용x
+
+forEach()
+
+시간 1000/1s
+
+file 입출력 : 파일 업로드시 변환 ->  1.hwp, 1.hwp + uuid ,date
+			        2023.09.25 / 21421542.hwp로 이름 변환
+static, singleton
+----------------------------
+List02
+
+Member.java   MemberDao.java  MemberEx.java
+회원정보 출력
+회원아이디 : 0000, 회원비밀번호 0000;
+String		String
+	생성자
+
+List : 줄
+
+-------------------------------------------
+List -> ArrayList
+add, remove
+
+Set -> HashSet : 중복된 값x
+add, remove
+
+setEx01 -> SetEx01.java
+
+
+Map -> HashMap : 중복된 키 x
+put
+
+List<Member>
+
+SetEx02.java
+
+SetEx03.java
+
+SetEx04.java -> main
+Register.java -> 객체
+RegisterDao.java -> add, delete, show  동작
+
+
+
+Map
+
+<k,v>
+<key, value>
+
+-> java
+
+=>javascript
+
+<userid. "koreait">
+
+num = 100
+
+Object obj = 
+
+mapEx
+
+
+MapEx01.java
+
+MapEx02.java
+
+Member.java
+MemberDao.java
+MemberEx.java
