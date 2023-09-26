@@ -1358,3 +1358,117 @@ MapEx02.java
 Member.java
 MemberDao.java
 MemberEx.java
+
+
+
+
+
+
+
+
+
+
+
+오전 9:02 2023-09-26**********************************************
+1. 입출력 : Input + Output = I/O
+
+운영체제(MS, Linux, JVM) -> 외부(장치)
+			- 폴더, 파일생성, 파일쓰기
+
+	예외처리(Exception) : try ~ catch ~ (finally)	
+		= throws
+	Exception -> Not, IOException
+
+2. 경로(절대경로, 상대경로)
+절대경로 : c:\, D:\,   /
+상대경로 : ../  ,   ./	  :기준점 - 현재 작업하는 그곳에 기준
+
+	../ 한 칸 위로  ../../ 두 칸 위로
+	./현재위치
+--------------------------------------------------------
+ioEx
+ioEx01.java
+
+IOEx02.java
+디렉토리
+현재시간을 1/1000초로 변환
+
+DateEx.java
+
+
+-------------------------------------
+
+CharSetEx.java
+
+StreamEx01.java
+
+*.properties
+
+naver.com
+
+웹서비스 종류
+홈페이지
+Ftp(파일업로드)
+Ssh(원격접속)
+dns(도메인 서버)
+
+
+StreamEx02.java
+
+
+-------------------------------------------
+inheritance
+
+InherEx01.java
+
+vehicle.java
+- model, color;
+- void start(), void stop()
+
+현대차 extends Vehicle
+-name = 소나타
+- model, color;
+- void start(), void stop()
+
+HyundaiEx.java
+
+기아차 extends Vehicle
+- name = k5
+- model, color;
+- void start(), void stop()
+
+KiaEx.java
+
+AutoEx.java
+
+
+클래스이름 extends 가져올 클래스명
+
+상속 extends : 새로 만드는게 아니라 
+기존에 있는 자료를 물려 받아서 사용 
+
+강제성, 강제성 x
+다중상속, 다중상속x
+다형성( 부모( (new Child2() ) ) - polymorphism
+
+다중 상속
+inter 만들때 - 몸통 x => add()
+interface Cals{
+	public void sum();
+}
+
+implements 사용할 때 
+강제성을 띄는 override
+
+부모 생성자()를 가져다 쓰면 
+super(); super.title
+
+내 생성자를 가져다 쓰면
+	this.title;
+this();
+
+상속
+오버라이드
+추상화
+인터페시으
+다형성
