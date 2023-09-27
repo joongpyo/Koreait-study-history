@@ -1470,5 +1470,152 @@ this();
 상속
 오버라이드
 추상화
-인터페시으
+인터페이스
 다형성
+
+
+
+
+
+
+
+
+
+
+
+
+
+오전 8:58 2023-09-27*************************************************
+
+inherEx01
+
+InherEx01.java
+
+클론 프로젝트
+
+-----------------------------------
+
+
+
+Add : add, title, turnOn(), turnOff()
+
+
+Desktop : 계산기 extends Add 
+- ms
+new 생성자()
+
+
+Laptop : 계산기 extends Add 
+- mac
+new 생성자()
+
+실행 : InherEx01.java
+
+-----------------------------------------------
+InherEx02.java
+
+1. 더하기, 빼기 : Cal
+  - 메인
+
+2. 더하기, 빼기 : Cal
+   추가 : 곱하기, 나누기 : AdvCal.java
+  - 메인 
+
+-------------------------------------------
+사람클래스 : Person.java
+- 이름, 나이
+void 잠(), void 식사()
+
+학생클래스 : Std.java
+- 학번
+- 이름, 나이
+void 잠(), void 식사()
+학생은 공부를 합니다.
+
+사원클래스 : Emp.java
+- 사번
+- 이름, 나이
+void 잠(), void식사()
+출근합니다.
+
+InherEx03
+
+
+-------------------------------------------------------
+
+phone.java
+모델,색상
+전원 on, off
+
+InherEx04.java
+
+-------------------------------------------------------
+
+Override 덮어쓰기(본체 고쳐쓰기)
+
+Cell.java
+void 전원 OnOff(전원을 켭니다. 전원을 끕니다.)
+
+AndroidCell.java
+
+AppleCell.java
+
+CellEx.java
+
+-----------------------------------------------------------
+Computer : void PowerOn(), void powerOff();
+OSsystem 
+
+abstract : 단일상속 extends
+본체 x
+override
+
+AbsEx.java
+
+interface -> implements : 다중상속
+본체x
+override
+
+interfaceEx.java
+
+----------------------------------------------------------
+DBEx.java
+
+데이터베이스 시작, 종료
+데이터베이스 쿼리 insert, update, delete, select, (강제)
+(강제x) transaction
+
+Mysql
+Oracle
+
+Transaction
+4단계 : 1~4 다 만족해야 성공
+
+ATM
+
+
+--------------------------------
+
+다형성 : polymorphism
+
+커널 : kernel(두뇌)
+
+class OS{
+	sysout("운영체제를 시작합니다");
+}
+
+MS
+void run();
+
+Apple
+void run();
+
+Linux
+void run();
+
+PolyEx.java
+상속(부모) -> 자식
+
+별도 클래스 처리
+
+다형성 -> 객체지향
