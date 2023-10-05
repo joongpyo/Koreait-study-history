@@ -8,7 +8,7 @@ import java.sql.*;
 
 class ItemCrud {
 	
-	void selectItem() throws Exception {
+	void selectItem() throws Exception { //출력 메소드
 		Connection conn = null; //연결
 		PreparedStatement pstmt = null; //insert 문을 실행시키기 위함
 		ResultSet rs = null;
@@ -44,7 +44,7 @@ class ItemCrud {
 	}
 	
 	
-	void insertItem() {
+	void insertItem() { //입력 메소드
 		Connection conn = null;
 		PreparedStatement pstmt = null; //insert 문을 실행시키기 위함
 		
