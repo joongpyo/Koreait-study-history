@@ -2062,3 +2062,111 @@ ItemsEx.kava
 
 
 
+
+
+
+
+
+
+
+
+
+오전 8:51 2023-10-10************************************************************
+(html 상세보기(목록)) -> db ->  객체 (model, entity, vo)
+-> jdbc
+
+mydb
+회원가입 myinfo
+아이디, 비밀번호, 나이
+
+
+
+myinfoPrj
+
+MyinfoEx.java
+
+create table myinfo(
+userid varchar(20) not null,
+passwd varchar(20) not null,
+age int not null
+);
+
+custPrj
+Customer.java
+CustomerDao.java
+연결()
+입력()
+출력()
+CustomerEx.java
+
+mydb;
+고객관리 프로그램: customers
+
+create table customers(
+id int not null,
+email varchar(50) not null,
+name varchar(20) not null,
+salary int,
+regdate date
+);
+
+------------------------------------------------------------
+STATIC
+
+static
+:공유(누적), new 사용 x -> 클래스이름.메소드()
+
+static
+StaticEx.java
+StaticEx2.java
+
+shop.java
+- 회원번호(자동으로 ++1) = 생성자를 이용해서..
+- 회원아이디
+- 회원비밀번호
+
+ShopEx.java
+
+
+
+HTML--------------------------------------------------------
+
+웹디자이너
+
+----------------풀스택
+웹퍼블리셔 html, css, js
+프론트엔드 html, css, js react , vue
+벡엔드
+
+1. 개발 툴 : 확장자 .html
+- intellij, eclipse, vscode, notepad++
+- bracket
+
+- vscode
+- html
+tut01 :index.html
+tut01.html
+
+
+emmet 자동완성
+
+스크립트(웹언어는 규칙 정확히 지키지 않아도 
+실행되는 경우가 많기에 유연하다.)
+
+추가 프로그램
+마우스 오른쪽 버튼으로 실행하는
+live server
+
+img,  br.. 외에는 열면 닫아줘야함
+
+
+w3c.org
+
+01_heading.html
+
+02_p.html
+
+03_ex.html
+! tab
+
+reset.css
