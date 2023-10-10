@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>h,p 예제</title>
+    <style>
+        h2{
+            color:blue;
+        }
+
+        /*눈에 보이지 않는 사각형 만들기*/
+        div{
+            /*브라우저 넓이의 절반으로 줄이기*/
+            width: 50%;
+        }
+
+        p{
+            /*기본크기는 16px = 1rem*/
+            font-size: 22px;
+            
+            /*현재 줄간격의 1.7배*/
+            line-height: 1.7;
+
+            /*좌우 균형을 맞춘 균등정렬*/
+            text-align: justify;
+            
+            /*다른 태그 이름끼리 위쪽으로 띄울 때*/
+            margin-top: 50px;
+        }
+    </style>
+
+
+</head>
+<body>
+    <div>
+        <!-- a: 하이퍼링크 -> 페이지 이동하기-->
+        <!-- target = "_blank" : 페이지 이동 시 새창 띄우기-->
+        <a href="http://koreaitjob.co.kr/" target = "_blank">
+            <h1>코리아IT아카데미에서는 </h1>
+        </a>
+        
+        <h2>누구든지 IT전문가가 될 수 있습니다.</h2>
+        <!--의미없는 문장을 만들어 내는 더미 텍스트
+        lorem단어수 + tab
+        ex) lorem50 -> 50단어 만들기
+        -->
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, quisquam. Facere odio nam praesentium reiciendis quis! Velit alias ab expedita minima, sunt reprehenderit saepe. Officia accusamus dignissimos asperiores necessitatibus? Soluta voluptatibus consectetur dolorum consequatur doloribus ex corrupti id maxime ullam praesentium vel aliquid quia possimus magnam esse facilis, laboriosam nisi.</p>
+    
+    </div>
+   
+    
+</body>
+</html>

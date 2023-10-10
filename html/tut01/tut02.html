@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>빌게이츠가 돈다.</title>
+
+    <style>
+        img {
+            /*정원*/
+            /*border-radius: 50%; */
+            border-radius: 5px;
+        }
+
+        /*이미지 위에 마우스 올리면 1.5배로 확대*/
+        img:hover {
+            transform: scale(1.5);
+            
+            /*이미지 위에 마우스 올리면 커지스는 속도 0.8s의 속도로 변함*/
+            transition: 0.8s;
+
+            /*이미지 회전 */
+            transform: rotate(-92160deg);
+        }
+        
+        a{
+           text-decoration: none; 
+           font-size: 20px;
+           color: red;
+           font-weight: bold;
+           font-style: italic;
+        }
+
+        a:hover{
+            text-decoration: underline;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- 절대경로 - c:\, d:\
+    상대경로: ..\..\ -->
+    
+    <!-- jpg, png -->
+    <!--사진 jpg, jpeg - 원본 용량의 1/50로 압축 : 배경 흰색
+    배경투명처리 : png-->
+        
+    <!-- 웹 접근성 -->
+    <img src="./images/BillGates.jpg" width ="400px" 
+    title="빌게이츠 사진" alt="빌게이츠 사진"/>
+
+    <!--이동(하이퍼링크)-->
+    
+    <a href="https://microsoft.com">마이크로소프트로 이동 </a>
+    
+    <a href="https://nid.naver.com/nidlogin.login?mode=form&url=https://www.naver.com/">
+        네이버로 로그인 페이지로 이동</a>
+
+    <br /> <!-- 줄바꿈-->
+
+    <!--name = "userid" : 프로그래밍 이름
+    class = "userid" : css 디자인할 때 이름
+    id = "userid" : javascript 작업할 때 이름 -->
+
+    아이디 : <input name="userid" type="text" maxlength="12"><br />
+    비밀번호 : <input name="passwd" type="password" maxlength="8">
+    <button>로그인</button>
+
+
+
+</body>
+
+</html>
