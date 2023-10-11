@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>h, p 예제2</title>
+    
+    <!--외부 라이브러리 : html 밖에서 가져온 것들 -->
+    <link rel="stylesheet" href="./css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <style>
+        h2{
+            font-family: 'Gothic A1', sans-serif;
+            margin-bottom: 10px;
+            
+        }
+        p{
+            font-family: 'Roboto', sans-serif;
+            line-height: 1.5;
+            text-align: left;
+            color: rgba(0, 0, 0, 0.7);
+        }
+      div{
+        width: 40%;
+        border: 1px solid rgba(0, 0, 0, 0.3);
+     /*   선     두께  직선   색상 */
+        padding: 8px;
+        margin: 20px;
+      }
+       
+      
+       .clr01{
+        color: crimson;
+       }
+
+       .clr02{
+        color:blue;
+       }
+      
+
+      i{
+        color: tomato;
+      }
+
+      i:hover{
+        color:blue;
+
+        /*색깔이 tomato -> red로 천천히 부드러게 0.5s의 속도로 바꾸는 태그*/
+        /*0.1(빠름), 1(느림)*/
+        transition: 0.9s;
+        
+        /*손가락 모양 만들어 내는 태그*/
+        cursor: pointer;
+      }
+       
+      button{
+            /*위아래, 좌우*/
+        padding : 4px 10px;
+        border: 0;
+        background-color: green;
+        color: white;
+      }
+
+      button:hover{
+        transition: 0.8s;
+        background-color: rgba(0, 4, 0);
+        cursor: pointer;
+      }
+      
+      img{
+        border-radius: 5px;
+      }
+
+      img:hover{
+        transform: rotate(-360deg);
+        transition: 0.8s;
+      }
+    </style>
+</head>
+<body>
+    <div>
+       
+        <h2>
+            <i class="fa-solid fa-computer"> </i>
+            <span class="clr01">코리아IT아카데미</span>에서는<br />
+            <span class="clr02">누구든지 IT전문가가 될 수 있습니다.</span>
+        </h2>
+       
+        <img src="../tut01/images/BillGates.jpg" alt="빌게이츠 사진입니다" title="이미지 위에 마우스를 올리면 보이는 글자">
+
+        <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto nihil nostrum tempore quaerat excepturi sapiente molestias amet vero ipsum? Mollitia quod necessitatibus adipisci voluptates natus ducimus ab eius blanditiis velit aspernatur amet excepturi cumque alias quaerat quas minima quibusdam tempore, tempora obcaecati cum sed dolor soluta nulla. Magnam, temporibus perspiciatis?
+            <a href="https://www.naver.com" target="_blank">
+            <button>Go, Naver</button>
+            </a>
+        </p>
+
+    </div>
+</body>
+</html>
