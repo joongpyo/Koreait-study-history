@@ -2246,3 +2246,58 @@ tut03
 -  css
 -  js
 01_ex.html
+
+
+
+
+
+
+
+
+오전 8:56 2023-10-12**********************************************
+generic
+
+NoneGeneric.java
+
+Object01.java 
+
+Object a = 10;
+(int)a 
+
+과일을 상자에 담기 : 객체
+연필을 상자에 담기 : 객체
+
+
+1. 객체 타입의 편의성
+NoneGeneric
+Object
+Generic.java
+Generic02.java
+
+
+
+-----------------------------------------------------
+02_ex.html
+
+fonts.google.com
+
+   fontawesome cdn
+
+   fontawesome.com
+   한글 영어
+    a1, roboto
+
+  main 1400px 1600px
+
+  웹 해상도
+  반응형 사이트
+  - 모, 탭, 노트, pc
+   
+   
+
+tut04
+01_text.html
+- css
+- js
+- images
+
