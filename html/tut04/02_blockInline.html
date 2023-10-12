@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>블록타입 & 인라인타입 예제</title>
+    <style>
+        span {
+            background-color: blueviolet;
+            display: inline-block;
+        }
+
+        p {
+            width: 200px;
+            height: 150px;
+            background-color:antiquewhite;
+            margin-right: 10px;
+        }
+
+        a {
+            background-color:chocolate;
+        }
+
+        .nav {
+            display: flex;
+            /*justify-content: space-between;*/
+            justify-content: space-around;
+        }
+
+        img {
+            width: 100%;
+            border-radius: 15
+            px;
+
+        }
+
+        img:hover {
+            transform: scale(1.5);
+            
+            /*이미지 위에 마우스 올리면 커지스는 속도 0.8s의 속도로 변함*/
+            transition: 0.8s;
+
+            /*이미지 회전 */
+            transform: rotate(-1474560deg);
+        }
+    </style>
+
+</head>
+<body>
+    <!-- 블록을 인라인으로 float, flex
+    display: inline-block;
+     -->
+    <!-- 블록: 나머지는 block - 브라우저 해상도와 상관없이 무조건 100% 넓이를 가짐-->
+    <!-- 인라인: a, span, img, table...: 내용물만큼만 넓이가 만들어짐 -->
+    
+     <span>메뉴1</span>
+     <span>메뉴2</span>
+     <span>메뉴3</span>
+     <span>메뉴4</span>
+
+     <div class="nav">
+        <p>
+           <img src="../tut01/images/BillGates.jpg" alt="빌게이츠 사진"> 
+        </p>
+        
+        <p>
+            <img src="../tut01/images/BillGates.jpg" alt="빌게이츠 사진">
+        </p>
+
+        <p>
+            <img src="../tut01/images/BillGates.jpg" alt="빌게이츠 사진">
+        </p>
+
+        <p>
+            <img src="../tut01/images/BillGates.jpg" alt="빌게이츠 사진">
+        </p>
+   </div>
+
+     
+     <a href="">메뉴1</a>
+     <a href="">메뉴2</a>
+     <a href="">메뉴3</a>
+     <a href="">메뉴4</a>
+
+
+</body>
+</html>
