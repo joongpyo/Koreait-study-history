@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>예제 1</title>
+    <link rel="stylesheet" href="../tut02/css/style.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&family=Roboto&display=swap" rel="stylesheet">
+    
+    <style>
+        /* 1920px = 100% */
+        main {
+            margin: 0 auto; /*글자x 내용을 담고있는 사각형을 화면 가운데*/
+            width: 1200px;
+            /* background-color: aqua; */
+        }
+        
+        .han {
+            margin: 10px 0;
+            
+            /*alpha 값 : 투명도 처리 0 (투명) ~ 1까지 (불투명)*/
+            color: rgba(0, 0, 0, 0.5);
+            /*font-style: italic;*/
+            /*text-decoration: underline;*/
+            
+                        /*14px*/
+            font-size: 0.875rem; /*반응형 크기*/
+        }
+
+        h2 {
+            /* 폰트 기본 16px -> 반응형 크기로 바꾸려면 35/16=>*/
+            font-size: 2.1875rem; /*반응형 크기*/
+            text-decoration: underline;
+        }
+
+        h2, .han, #han {
+            font-family: 'Gothic A1', sans-serif;
+        }
+
+        p {
+            font-family: 'Roboto', sans-serif;
+        }
+
+        article {
+            padding: 41px 10px;
+        }
+
+        .contents {
+            color: rgba(0, 0, 0, 0.8);
+            line-height: 1.5; /*현재 줄간격의 1.5배*/
+            text-align:  justify; 
+        }
+
+        .btn {
+            /*버튼 선지우기*/
+            /*border: none;*/
+            border: 0;
+            
+            font-family: 'Roboto', sans-serif;
+            text-transform: uppercase; /*대소문자 변경*/
+            font-size: 18px;
+            border: 1px solid #cccccc;
+            padding: 14px 24px;
+            
+            /*정원 50%, 타원 50px*/
+            border-radius: 50px;
+            background-color: transparent;
+            margin-top: 25px;
+        }
+
+        .btn:hover{
+            background-color: darkcyan;
+            color: #fff;
+            border: 1px solid transparent;
+            cursor: pointer;
+            transition: .5s;
+            ;
+        }
+
+        i {
+            color:blue;
+            cursor: pointer;
+
+        }
+
+        hr{
+            border:0;
+            border-top: 1px solid rgba(0, 0, 0, 0.6);
+            
+        }
+
+    </style>
+</head>
+
+<body>
+    <main>
+        <article>
+            <h2 id="han">
+                국가부채 사상 첫 1100조원 돌파…올해 재정적자만 66조원
+            </h2>
+            
+            <p class="han">
+                중앙일보 | 입력 2023.10.12 12:49, 업데이트 2023.10.12 14:04
+            </p>
+            
+            <p class="contents">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Quasi eaque veritatis repellendus mollitia suscipit hic aspernatur at numquam aliquid! Eaque debitis 
+                laudantium voluptatem perspiciatis enim. Harum ex ea, pariatur, quas, quibusdam possimus ut numquam 
+                sunt voluptates velit voluptatum deserunt tempora!... <i class="fa-regular fa-square-plus"></i>
+            </p>
+           
+            <button class="btn">Continue Reading</button>
+        </article>
+        
+        <hr />
+        
+        <article>
+            <h2 id="han">
+                국가부채 사상 첫 1100조원 돌파…올해 재정적자만 66조원
+            </h2>
+            
+            <p class="han">
+                중앙일보 | 입력 2023.10.12 12:49, 업데이트 2023.10.12 14:04
+            </p>
+            
+            <p class="contents">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Quasi eaque veritatis repellendus mollitia suscipit hic aspernatur at numquam aliquid! Eaque debitis 
+                laudantium voluptatem perspiciatis enim. Harum ex ea, pariatur, quas, quibusdam possimus ut numquam 
+                sunt voluptates velit voluptatum deserunt tempora!... <i class="fa-regular fa-square-plus"></i>
+            </p>
+           
+            <button class="btn">Continue Reading</button>
+        </article>
+
+        <hr />
+        
+        <article>
+            <h2 id="han">
+                국가부채 사상 첫 1100조원 돌파…올해 재정적자만 66조원
+            </h2>
+            
+            <p class="han">
+                중앙일보 | 입력 2023.10.12 12:49, 업데이트 2023.10.12 14:04
+            </p>
+            
+            <p class="contents">
+                Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                Quasi eaque veritatis repellendus mollitia suscipit hic aspernatur at numquam aliquid! Eaque debitis 
+                laudantium voluptatem perspiciatis enim. Harum ex ea, pariatur, quas, quibusdam possimus ut numquam 
+                sunt voluptates velit voluptatum deserunt tempora!... <i class="fa-regular fa-square-plus"></i>
+            </p>
+           
+            <button class="btn">Continue Reading</button>
+        </article>
+
+    </main>    
+</body>
+
+</html>
