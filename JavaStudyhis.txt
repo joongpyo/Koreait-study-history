@@ -2293,7 +2293,75 @@ fonts.google.com
   반응형 사이트
   - 모, 탭, 노트, pc
    
-   
+
+
+
+
+
+
+
+
+
+오전 9:03 2023-10-13********************************************************
+
+catch(Exception)
+자바(로컬) : 컴파일언어(타입 강형), 하이브리드 언어
+javac 클래스이름.java -> 컴파일(JVM 인식) -> (클래스이름.class) -> java 클래스이름(실행)
+			compile				Runtime
+
+서버 : 여러사람이...
+웹 언어 : 인터프리터 언어
+
+예외 : 문제가 생기면 적절하게 개발자가 조정 가능
+에러 : 개발자 조정 할 수x  => JVM   
+
+jdk + jre
+
+Throwable (최상위 클래스)
+- Exception : 컴파일
+  1. classNotFoundE~ : Class.forName(디비);
+  2. IOE~ : 입출력
+  3. FileNotFoundE : 파일이 없는 경우
+  4. InterruptException : 쓰레드
+  5. CloneNotSupportEx~ : clone 객체 사용할 때
+
+- Runtime Exception : 실행 단위
+  ArimetricEx~ : 나누기 예외
+
+exception
+Exception01.java
+Exception02.java
+
+
+
+사용자 아이디 체크(exception)
+Exception 상속 받아서 생성자를 이용해서 예외클래스 작성 -> 사용
+
+UseridCheck.java
+
+LoginEx.java
+
+
+
+tut05
+01_ex.html
+- css
+- js
+- images
+
+배경색 설정 후
+- 인라인 : a, form, table, img, span
+- 블록 : 
+
+02_ex.html
+
+03_ex.html
+
+ul li
+ol li
+메뉴
+
+04_ex.html
 
 tut04
 01_text.html
