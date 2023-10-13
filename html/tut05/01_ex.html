@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>인라인&블록타입 메뉴 만들기</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+        }
+
+        #inType {
+            background-color: #eb5757;
+            padding: 20px 0;
+        }
+
+        #inType a {
+            font-size: 20px;
+            margin-right: 25px;
+        }
+
+        #inType a:hover {
+            text-decoration: underline;
+        }
+
+        #inType a:nth-child(1) {
+            margin-left: 50px;
+        }
+
+        /*------------------------------------------*/
+
+        #blockType {
+            background-color: #eb5757;
+            display: flex;
+            padding: 20px 0;
+        }
+
+        #blockType p a {
+            font-size: 20px;
+            margin-right: 25px;
+        }
+
+        #blockType p a:nth-child(1) {
+            margin-left: 50px;
+        }
+        
+    </style>
+
+</head>
+<body>
+    <!--인라인-->
+    <nav id="inType">
+        <a href="http://www.naver.com" target="_blank">Home</a>
+        <a href="http://www.daum.net">About</a>
+        <a href="">Shop</a>
+        <a href="">Donate</a>
+        <a href="">Contact</a>
+    </nav>
+    
+    <br/>
+    
+    <!--블록-->
+    <nav id="blockType">
+        <p><a href="">Home</a></p>
+        <p><a href="">About</a></p>
+        <p><a href="">Shop</a></p>
+        <p><a href="">Donate</a></p>
+        <p><a href="">Contact</a></p>
+    </nav>
+
+</body>
+</html>
