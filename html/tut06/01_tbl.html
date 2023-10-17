@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 만들기 예제</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Gothic A1', sans-serif;
+        }
+
+        table {
+            width: 100%;
+            font-size: 20px;    
+            border-collapse: collapse;
+        }
+
+        table tr:nth-child(1) {
+            background-color: #eee;
+        }
+    
+        table tr td {
+            text-align: center;
+        }
+
+        /* 디자인 작성 방법
+        외부 스타일
+        내부 스타일 */
+
+        .title {
+            text-align: left;
+            padding-left: 10px;
+
+        }
+
+        /* img, table, form 넓이 무조건  width : 100%; */
+        main {
+            width: 1400px;
+            margin: 0 auto;
+            
+        }
+
+        table tr{
+            /* 가로 넓이 값은 % 사용 o
+            높이 값은 % 사용 x */
+            height: 60px;
+        }
+
+        header {
+            text-align: center;
+            width: 1400px;
+            margin: 50px auto;
+            /* background-color: rebeccapurple; */
+        }
+
+        p {
+            margin-bottom: 50px ;
+            color: rgba(0, 0, 0, 0.6);
+        }
+
+        header h1 {
+            margin-bottom: 20px;
+        }
+
+        table tr td, table tr th {
+            border: 1px solid #ccc;
+            
+        }
+
+        .num {
+            width: 40px;
+            height: 40px;
+            /* background-color: blue; */
+            color: black;
+            font-size: 18px;
+            display: inline-block;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            border: 1px solid #ccc;
+        }
+        .active{
+            background-color: blue;
+            color: white;
+        }
+
+        .page{
+            margin-top: 20px;
+        }
+
+        .page span{
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        .page span:last-child {
+            margin-right: 0;
+        }
+
+        form {
+            margin-bottom: 7px;
+           
+            
+        }
+
+        .search {
+            display: flex;
+            justify-content: right;
+        }
+
+        .btn {
+            cursor: pointer;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h1>공지사항</h1>
+        <p>짱구네 집에서 진행되는 다양한 이벤트와 새로운 소식을 알려드립니다.</p>
+        
+    </header>
+    
+    <br>
+
+    <main>
+        
+
+     <div class="search">
+        <form action="">
+            <input type="text" placeholder="검색어를 입력하세요.">
+            <button class="btn">검색</button>
+        </form>
+     </div>
+
+    <table>
+        <tr>
+            <th>번호</th>
+            <th>제목</th>
+            <th>작성일</th>
+            <th>조회수</th>
+        </tr>
+        <tr>
+            <td>2</td>
+            <td class="title"><strong>새학기에도 계속된다.</strong></td>
+            <td>2023.10.17</td>
+            <td>100</td>
+        </tr>
+        <tr>
+            <td>1</td>
+            <td style="text-align: left; padding-left: 10px;"><b>특별한 국비지원 100%</b> </td>
+            <td>2023.10.06</td>
+            <td>120</td>
+        </tr>
+    </table>
+
+    <div class="page">
+        <span class="num active">1</span>
+        <span class="num">2</span>
+    </div>
+
+    </main>
+    
+   
+    
+</body>
+
+</html>
