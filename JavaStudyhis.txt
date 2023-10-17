@@ -2369,3 +2369,70 @@ tut04
 - js
 - images
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+오전 9:01 2023-10-17*****************************************************
+1.익명함수 : 이름없이 사용(1번 필요)
+	   - 다른 메소드안에 사용(내부 함수)
+2. 인터페이스 사용해서 구현
+3. 생성자 x
+4. 인터페이스에서 이름만 빌려 쓰고 내용은 별도로 작성
+
+인터페이스(생성자 만들 x -> new x) -> 람다식
+Java : 객체지향
+Lamda : 객체지향 -> 함수 지향도 사용 가능(Javascript 익명함수)
+
+public string str(){}
+
+1. function str(){}
+2. function(){}
+3. () -> {}
+
+lamda
+LamdaEx.java
+
+LamdaEx2.java
+
+LamdaEx3.java
+
+LamdaEx4.java
+
+LamdaEx5.java
+
+문자열 연결: +
+
+concat(연결1, 연결2, 연결자)
+	001234-5567890 "-"
+
+ladaEx06.java
+LamdaEx06.java
+
+
+Html--------------------------
+
+ul li
+ol li
+dl dt	
+05_ex.html
+
+
+tut06
+01_tbl.html
+- css
+- images
+- js
+
