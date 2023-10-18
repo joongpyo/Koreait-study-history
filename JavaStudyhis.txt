@@ -2436,3 +2436,66 @@ tut06
 - images
 - js
 
+
+
+
+
+
+
+
+
+
+
+
+오전 9:01 2023-10-18**********************************************
+
+
+
+
+1. 
+  thread
+ ThreadEx.java
+ThreadEx01.java
+ThreadEx02.java
+ThreadEx03.java
+
+1. extends Thread 상속
+2. implements Runnable > Thread 객체에 주입해서 사용
+-> 오버라이드 run(); - 작업
+-> start(); 작업을 실행
+
+implements 사용시 Thread 객체 별도 생성
+
+
+ThreadEx04.java
+
+Thread를 이용해서 익명함수로 처리 : 필요에 의해서 한번
+- run(); 메소드를 익명함수로 처리
+- start();
+
+Thread t1 = new Thread (익명함수)
+Thread t1 = new Thread(new Runnable () {})
+
+
+
+
+HTML----------------------
+
+tut06 
+03_ex.html
+
+폰트, 폰트어썸
+기본 스타일 제거
+ A1, fontawesome  cdn
+unsplash.com -> raw(5000px) 원본그대로
+컴퓨터상에 나타낼땐 압축해서
+
+
+------------------
+header > nav 
+
+main > section > article
+main > section > article
+main > section > article
+
+footer > copyright
