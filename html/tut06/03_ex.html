@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>테이블 복습</title>
+    <link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        nav{
+            display: flex; /*nav 가로배치*/
+            width: 1200px;
+            margin: 0 auto; /*중앙 정렬*/
+            justify-content: space-between;
+            padding: 25px 0;    /*안쪽 여백*/ 
+        }
+
+        .nav-left a {
+            font-weight: bold;
+            margin-right: 40px; /*사각형 오른쪽으로 띄우기*/
+            font-size: 18px;
+        }
+
+        hr {
+            border: none;
+            border-top: 1px solid #ccc;
+        }
+
+        .nav-left a:hover {
+            text-decoration: underline;
+            color: rgb(11, 11, 211);
+        }
+
+        .nav-right span {
+            font-weight: bold; /*폰트 진하게*/
+        }
+
+        .nav-right .tel2 {
+            color:rgb(11, 11, 211);
+            font-size: 20px;
+        }
+
+        .img-box {  /*이미지는 무조건 100 이미지의 부모쪽을 수정해야함*/
+            width: 400px;
+            margin: 20px auto;
+            overflow: hidden; /*이미지가 800px이상으로 안벗어나게함*/
+        }
+
+        .img-box img:hover {
+            transform: scale(1.2); /*이미지를 20% 커지게*/
+            transition: 0.4s; 
+        }
+
+        .img-box img { /*마우스가 이미지에서 벗어날 때 0.4s로 원래 사이즈로 돌아감*/
+            transition: 0.4s;
+        }
+
+        .notice  {
+            width: 1200px;
+            margin: 0 auto; /*사각형을 중앙으로 정렬*/
+        }
+
+        .notice-title { 
+            text-align: center; /*글자를 중앙으로*/
+            margin: 50px 0 ;
+            
+        }
+
+        .notice-title h1 {
+            font-size: 35px;
+            margin-bottom: 10px;
+        }
+
+        .notice-title p {
+            color: rgba(0,0,0,0.7);
+            font-size: 14px;
+            
+        }
+
+        table tr:nth-child(1) { /*첫번째줄*/
+            background-color: #eee;
+        }
+
+
+        table tr td, table tr th {
+            border: 1px solid #ccc;
+            font-size: 18px;
+            text-align: center;
+        }
+
+        
+        table tr {
+            height: 60px; /*높이*/
+        }
+
+        .notice-table{
+            margin-top: 40px;
+        }
+
+        table tr th:nth-child(1){
+            width: 5%;
+        }
+
+        table tr th:nth-child(2){ /*남는 너비는 굳이 적지 않아도 됨*/
+            width: 78%
+        }
+
+        table tr th:nth-child(3) {
+            width:10%
+        }
+        
+        table tr th:nth-child(4){
+            width: 7%;
+        }
+
+        table tr td {
+            cursor: pointer;
+        }
+
+        table tr td:hover {
+            color: cadetblue;
+            text-decoration: underline;
+        }
+
+        .search {
+            display: flex;
+            justify-content: right;
+        }
+
+        .btn {
+            cursor: pointer;
+        }
+        
+        .num {
+            width: 40px;
+            height: 40px;
+            /* background-color: blue; */
+            color: black;
+            font-size: 18px;
+            display: inline-block;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 40px;
+            border: 1px solid #ccc;
+        }
+        .active{
+            background-color: blue;
+            color: white;
+        }
+
+        .page{
+            margin-top: 20px;
+        }
+
+        .page span{
+            margin-right: 5px;
+            cursor: pointer;
+        }
+
+        .page span:last-child {
+            margin-right: 0;
+        }
+
+
+    </style>
+
+</head>
+
+<body>
+    <hr/>
+    <nav>
+        <div class="nav-left">
+            <a href="">아카데미 소개</a>
+            <a href="">IT 교육과정</a>
+            <a href="">자격증 취득과정</a>
+            <a href="">국비지원 과정</a>
+            <a href="">커뮤니티</a>
+        </div>
+
+        <div class="nav-right">
+            <span class="tel1">대표전화</span>  <!--단어강조할때 span 문장x-->
+            <span class="tel2">1588-5809</span>
+        </div>
+    </nav>
+    <hr/>
+
+    <main>
+
+        
+
+        <section class="bg-img">
+           
+            <div class="img-box">
+                <img src="images/fruit1.jpg" alt="notice img">
+            </div>
+
+        </section>
+        <section class="notice">
+            <div class="notice-title">
+                <h1>공지사항</h1>
+                <p>코리아아이티 아카데미 공지사항입니다.</p>
+            </div>
+
+            <div class="search">
+                <form action="">
+                    <input type="text" placeholder="검색어를 입력하세요.">
+                    <button class="btn">검색</button>
+                </form>
+             </div>
+
+            <div class="notice-table">
+                <table>
+                    <tr>
+                        <th>번호</th>
+                        <th>제목</th>
+                        <th>작성일</th>
+                        <th>조회수</th>
+                    </tr>
+                    <tr>
+                        <td>3</td>
+                        <td style="text-align: left; padding-left: 5px;">
+                            <strong><i class="fa-regular fa-circle-xmark"></i> 공지사항 테스트<3> 입니다.</strong>
+                        </td>
+                        <td>2023.10.31</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>2</td>
+                        <td style="text-align: left; padding-left: 5px;">
+                            <strong><i class="fa-regular fa-circle-xmark"></i> 공지사항 테스트<2> 입니다.</strong>
+                        </td>
+                        <td>2023.10.30</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>1</td>
+                        <td style="text-align: left; padding-left: 5px;">
+                            <strong><i class="fa-regular fa-circle-xmark"></i> 공지사항 테스트<1>입니다.</strong>
+                        </td>
+                        <td>2023.10.19</td>
+                        <td>0</td>
+                    </tr>
+                </table>
+            </div>
+
+            <div class="page">
+                <span class="num active">1</span>
+                <span class="num">2</span>
+            </div>
+        
+
+        </section>
+    </main>
+</body>
+
+</html>
