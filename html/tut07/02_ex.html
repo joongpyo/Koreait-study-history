@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>이미지 예제</title>
+    <style>
+        img {
+            width: 400px;
+            height: 300px;
+            /* border-radius: 15px; */
+       /*b*/border-top-right-radius: 20px; /*오른쪽 위만 둥글게*/
+            border-bottom-left-radius: 20px;
+        }
+
+        img:hover {
+       /*b*/opacity: 0.7; /*이미지위에 마우스를 올리면 이미지가 흐려짐*/
+            border-top-right-radius: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!--b--> <!--title: 이미지위에 마우스, alt 이미지가 깨지면 이미지 대신 나옴-->
+    <img src="images/apple.jpg" title="사과" alt="사과"> 
+    
+    <!--b--> <!--사진 밑에 설명 (안으로 들여쓰기가 됨)-->
+    <figure>자몽사진</figure> 
+
+    <!--b--> <!-- (하이퍼링크) <a href=""><a/> : 페이지 이동 -->
+    <p>
+    <!--b--> <!-- target="_blank": 새창띄우기  -->
+    <a href="01_ex.html" target="_blank" ><과일사진> 클릭해보세요.</a>    
+    </p>
+</body>
+
+</html>
