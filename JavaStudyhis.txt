@@ -2767,3 +2767,180 @@ fonts.google.com
 03_ex.html
 
 04_ex.html
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+오전 9:01 2023-10-20***********************************************************
+
+koritbs.cafe24.com
+
+------------------------------------
+
+MYsql 데이터베이스
+(1) CUI : cmd
+(2) GUI : Workbench
+
+
+
+DDL 
+DML 
+DCL : grant, revoke
+
+
+shopdb/1234
+
+/*
+계정만들기
+
+관리자로 접속 : mysql -uroot  -p  ( mysql 설치할때 기입했던 비밀번호 입력 ) 
+
+mysql 폴더로 들어가기 : use mysql;
+
+사용할 수 있는 아이디인지 확인 : select host, user from user;
+
+관리자가 DB 생성 : create database 생성할DB;
+
+아이디 비밀번호 생성 : create user 아이디@'%' identified by '비밀번호'; 
+
+권한설정 : grant all on 생성한DB.* to 아이디@'%' with grant option;
+
+새로고침 : flush privileges;
+
+사용자계정 접속 : 만든 DB로 접근
+mysql -ushopdb -p
+
+use shopdb;
+*/
+
+
+
+
+create table item2(
+item2_id int,
+item2_name varchar(100)
+);
+
+create table item(
+item_id int,
+item_name varchar(100)
+);
+
+show tables;
+
+create table cart(
+cart_id_int,
+cart_item_name varchar()
+);
+
+id,pwd => mydb/1234
+서버(관리자 1명 : root) 
+-> 사용할 수 있는 아이디인지 확인
+-> 관리자가 데이터베이스 생성(아이디)
+-> 사용자 계정(root) : 아이디, 비밀번호
+-> 명령어를 이용해서 생성, 권한설정, 새로고침
+
+
+DDL : Definition : 정의어 => create, drop, alter(변경)
+
+/*
+테이블 이름 변경
+
+Rename
+테이블 이름
+
+tbl_board => tbl_article
+rename table tbl_board to tbl_article;
+*/
+
+
+/*
+추가, 수정
+
+컬럼 추가
+ALTER TABLE tbl_article 
+ADD tbl_article_date datetime;
+
+
+
+
+컬럼타입 변경
+ALTER TABLE tbl_article 
+MODIFY COLUMN tbl_board_name varchar(39);
+
+칼럼명 변경
+ALTER TABLE tbl_article 
+RENAME COLUMN tbl_board_name To tbl_article_name;
+
+컬럼추가 끼워넣기
+ALTER TABLE tbl_article 
+ADD tbl_article_content varchar(100) AFTER tbl_article_name;
+*/
+
+
+/*
+컬럼제거
+
+ALTER TABLE tbl_article 
+DROP COLUMN tbl_article_content;
+*/
+
+
+
+
+html----------
+usemap
+
+05_ex.html
+
+-------------------
+form
+
+tut08
+
+01_ex_form.html
+
+ Form
+     1. method => 전송 방식(post, get)
+      (1) get: 속도 우선, 보안 x, 길이 제한
+      (2) post : 안전하게 데이터 처리, 길이 제한 
+     
+     2. 정보 입력 => 어디 페이지로 이동해서 처리를 할 건지...
+     3. encType : 첨부파일
+     4. id : 일반적을 자바스크립트 작업
+     5. class : 자바스크립트 또는 디자인
+
+     button
+     1. type=submit (Enter, click)
+     2. type=button (click)
+
+<form 
+method="post" 
+action="save" 
+enctype="multipart/form-data"
+ id="" 
+class="">
+</form>
+
+  <!-- 블록을 인라인으로 float, flex
+    display: inline-block;
+     -->
+    <!-- 블록: 나머지는 block - 브라우저 해상도와 상관없이 무조건 100% 넓이를 가짐-->
+    <!-- 인라인: a, span, img, table...: 내용물만큼만 넓이가 만들어짐 -->
+
+
+
+
