@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form input</title>
+    <style>
+        input::placeholder { /*일반적인 방법으로 접근x */
+            color: red;
+            font-style: italic;
+        }
+
+        input[type='submit'] {
+            background-color: blue;
+        }
+
+    </style>
+</head>
+
+<body>
+    <!-- <form action="">
+        <label for="">검색어 입력</label> 이름표
+        <input type="text"> <br />
+        <input type="number" min="0" max="10"> <br />
+        <input type="search"> <br />
+        <input type="password"> <br />
+        <input type="date" > <br />
+        <input type="email" required> <br/>
+        <input type="submit" value="확인">
+    </form>     -->
+
+    <form>
+        <ul>
+            <li>
+                <label>검색어</label>
+                <input  placeholder="검색어를 입력하세요" 
+                
+                type="text" 
+                name="search" 
+                class="search" 
+                id="search"> <!--value는 값-->
+            </li>
+        </ul>
+        <input class="btn" type="submit" value="검색"><br>
+        <!-- <button type="submit">SEARCH</button> -->
+    </form>
+
+    <script>
+       /*
+       function check () {
+            //화면에 창 띄우기
+            //alert(document.querySelector("input[type=text]").value);
+            // alert(document.querySelector(".search").value);
+            // alert(document.querySelector("input[name=search]").value);
+            // 페이지에 동일한 이름 있어도 사용
+            // alert(document.querySelector(".search").value);
+            // 페이지에 동일한 이름 있으면 X
+            // alert(document.querySelector("#search").value);
+        }
+
+        document.querySelector(".btn").onclick = check; //클릭하면 
+        */
+
+
+
+        let search = document.querySelector("search");
+        let btn = document.querySelector(".btn");
+
+        /*
+        // btn.onclick = function() {
+        //     alert(search.value);
+        // }
+        */
+        
+        btn.onclick = () => {
+            alert(search.value);
+        }
+
+    </script>
+
+</body>
+
+</html>
