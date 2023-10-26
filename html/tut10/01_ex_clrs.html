@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>색상 예제</title>
+    <style>
+        .item{
+            width: 100px;
+            height: 100px;
+            margin-bottom: 20px;
+        }
+
+        .clr1{
+            /* 투명도 */
+            /* background-color: rgba(255, 0, 0, 0.5); */
+
+            /* 불투명도 */
+            background-color: red;
+            opacity: 0.5;
+        }
+
+        .clr2 {
+            background-color: #008000;
+        }
+
+        .clr3 {
+            background-color: #0000ff;
+        }
+
+        
+    </style>
+</head>
+<body>
+    <!-- Item 1, Item2, Item3 -->
+    <!-- div.item*3>{Item $}  글자 자동입력 -->
+    <div class="item clr1">Item1</div>
+    <div class="item clr2">Item2</div>
+    <div class="item clr3">Item3</div>
+</body>
+</html>
