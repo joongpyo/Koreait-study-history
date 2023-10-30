@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>자바스크립트 함수 예제</title>
+</head>
+<body>
+    <!-- html -->
+
+    <!-- javascript -->
+    <script>
+        //함수
+        // function 함수명() {
+
+        // }
+        //익명함수 : onclick 또는 addEventListenr()
+        // function () {
+
+        // }
+
+        //100, 200 = 300을 함수로(console, return)
+        function sum(num1, num2){
+            console.log(num1+num2);
+        }
+
+        sum(100, 200);
+
+        console.log("");
+
+        function add(x, y){
+            return x + y;
+        }
+
+        console.log(add(1,1));
+
+        //함수 결과를 변수에 저장 후 출력 : frontend
+        let result = function (n1, n2) {
+            return n1 + n2;
+        }
+
+        console.log(result(10,20));
+
+        //글자 출력 : 한 줄 출력할 때는 중괄호 부분이 생략
+        function disp(){
+            return "Hello KoreaIt";
+        }
+
+        console.log(disp());
+
+        
+
+        //함수
+        //결과값을 변수로 받기1
+        
+        let result2 = () => "Hello KOREAIT";
+        
+
+        // console.log(result2());
+
+        //매개변수에 값을 전달받아 변수에 저장하여 글자 출력하기
+        let result3 = (title) => {
+            console.log(title);
+        }
+
+        console.log(result3("감사합니다."))
+
+        function disp1(title) {
+            return title;
+        }
+
+        console.log(disp1("사과는 맛있어 맛있으면 바나나 바나나는 길어 길면 기차 기차는 빨라 빠르면 비행기 비행기는 높아 높으면 백두산"));
+
+        console.log("");
+
+        function disp2(title) {
+            console.log(title);
+        }
+        disp2("코리아아이티아카데미학원");
+
+        console.log("");
+        //javascript => jquery
+        //페이지 랜더링이 끝나면 맨 처음 실행되는 코드
+
+        //(익명함수)(초기값);
+        
+        $(function (msg) {
+            
+        })
+
+        (function (msg) { //msg = "Welcome Koreait"
+            console.log(`${msg}가 맨 처음 출력됩니다.`);
+        })("Welcome Koreait");
+
+
+        </script>
+</body>
+</html>
