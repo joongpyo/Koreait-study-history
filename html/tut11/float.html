@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>float 예제</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wrap{
+            background-color: #ccc;
+        }
+
+        /* :after 사각형 뒤, :before 사각형 설정 */
+        .wrap:after {
+            content:'';
+            clear: both;
+            display: block;
+        }
+
+        .item {
+            width: 100px;
+            height:100px;
+            background-color: #254de4;
+            color: #fff;
+            margin: 10px;
+            /* float 설정 해제 clear*/
+
+            float: left;
+        }
+    </style>
+</head>
+<body>/
+    <div class="wrap">
+        <div class="item">item1</div>
+        <div class="item">item2</div>
+        <div class="item">item3</div>
+    </div>
+    
+</body>
+</html>

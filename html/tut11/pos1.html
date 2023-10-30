@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>relative 상대좌표(기준값을 바꿀 수 있음)</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .wrap {
+            background-color: red;
+            width: 200px;
+            height: 200px;
+
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .box {
+            background-color: blue;
+            width: 100px;
+            height: 100px;
+            position: relative;
+            top: 50px;
+            left: 80px;
+        }
+       
+    </style>
+</head>
+
+<body>
+    <div class="wrap">
+        <div class="box">
+            relative
+        </div>
+    </div>
+</body>
+</html>
