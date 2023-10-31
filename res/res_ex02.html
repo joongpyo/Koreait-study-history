@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>반응형 예제2</title>
+    <style>
+         /* 큰(max-width로 해상도 설정) -> 작 */
+        @media (max-width:1280px) {
+            .wrap {
+                background-color: blue;
+                width: 100%;
+                height: 500px;
+            }
+        }
+
+        @media (max-width:800px){
+            .wrap {
+                background-color: chartreuse;
+                width: 50%;
+                height: 400px;
+            }
+        }
+
+        @media (max-width:400px){
+            .wrap {
+                background-color: red;
+                width: 100%;
+                height: 800px;
+                font-size: 50px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <div class="wrap">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Ut error quibusdam vel nihil recusandae ea. 
+        Culpa eveniet obcaecati eos quasi.
+    </div>
+</body>
+</html>
