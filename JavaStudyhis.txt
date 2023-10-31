@@ -4150,3 +4150,217 @@ tut01
 -tut02.html
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+오전 8:56 2023-10-31**********************************************************
+
+1. html 반응형 -> 전체사이트 작업
+2. javascript (3)
+
+
+DCL : 보안 -> Grant(권한설정), revoke(권한제거)
+---------------------------------------
+1. 계정 생성 - root로 접속
+(1) 계정 정보 확인 mysql 디비 - user (host, user)   - 
+select host, user from user;
+
+(2) 계정 = 데이터베이스 이름 동일하게 생성 (관리자가 부여) 
+create user grp@'%' identified by '1234';
+(%: 다른 아이피로 접근 가능)
+
+(3) 계정 생성 후 생성된 디비에 권한 부여 
+grant all on grp.* to grp@'%' with grant option;
+
+(4) 새로고침 flush privileges
+
+------------------------------
+<코리아아이티 아카데미 그룹웨어>
+1. html,css,js - ajax 
+
+2. database
+
+부서명, 직책명, 사원가입, 
+
+
+부서
+create table dept(             
+dept_code char(3) not null,
+dept_name varchar(20) not null,
+primary key(dept_code)
+);
+
+insert into dept values('100', '인사과');
+insert into dept values('200', '자재과');
+insert into dept values('300', '비서실');
+insert into dept values('900', '임원실');
+
+select count(dept_code) as '부서' from dept;
+select * from dept;
+select * from dept order by dept_code asc;
+
+
+직책명 
+부장 100, 대리 200, 사원 300
+
+create table pos(
+pos_code char(3) not null,
+pos_name varchar(10) not null,
+dept_code varchar(3) not null,
+primary key(pos_code),
+foreign key(dept_code) references dept(dept_code)
+on update cascade
+on delete restrict
+);
+
+직책코드 직책명 부서코드
+insert into pos values('100', '인사과장', '100');
+insert into pos values('103', '사원', '100');
+insert into pos values('301', '비서실장', '300');
+insert into pos values('901', '대표이사', '900');
+insert into pos values('902', '기술이사', '900');
+
+select * from pos order by dept_code desc;
+2단 정렬
+select * from pos order by dept_code desc, pos_name desc;
+
+임원실 검색
+select * from pos where dept_code = '900';
+
+
+create table emp(
+id int not null auto_increment,
+emp_email varchar(50) not null,
+emp_passwd varchar(50) not null,
+emp_name varchar(10) not null,
+pos_code char(3) not null,
+
+primary key(id),
+foreign key(pos_code) references pos(pos_code)
+on update cascade
+on delete restrict
+);
+
+insert into emp values(null, 'mail@mail.com', '1234', '김덕평', '100');
+
+
+
+인사과(2) 비서실(1) 임원실(2)
+
+select A.dept_name, count(B.pos_code) from dept A
+inner join pos B on A.dept_code = B.dept_code 
+group by A.dept_name;
+
+
+인사과 인사과장 김덕평 순으로 출력하시오.
+t1 inner join t2 on t1.pk=t2.fk 
+inner join t3 on t2.pk = t3.fk;
+
+select D.dept_name, P.pos_name, E.emp_name from dept D inner join pos P 
+on D.dept_code = P.dept_code
+inner join emp E on P.pos_code = E.pos_code;
+
+
+
+사원 테이블에서 직책이 '100'이고 사원번호 1번인 사원의 사원명을 김척척로 변경하시오.
+update 테이블명 set 변경 where 조건 = 값;
+
+update emp set emp_name = '김척척' where pos_code = '100' and id = 1;
+
+이름이 김척척인 사원의 이메일을 'busan@busan.co.kr', 이름을 '홍길동'으로 변경하시오.update emp set emp_name = '김척척' where pos_code = '100' and id = 1;
+
+update emp set emp_email = 'busan@busan.co.kr', emp_name = '홍길동' where emp_name = '김척척';
+
+
+이메일이 'busan@busan.co.kr'이거나 비밀번호가 '1234'인 사원의 정보를 삭제하시오.
+
+delete from emp where emp_email = 'busan@busan.co.kr' or emp_passwd = '1234';
+
+
+view : 논리적(가상) 테이블을 생성해서 보안 처리
+
+create view emp_v as select emp_email, emp_name from emp;
+
+계정삭제
+
+
+
+게시판 환경설정, 게시판, 댓글
+
+select * from emp;
+
+3. Spring boot (객체)
+
+
+
+
+
+html-=--------------------------
+
+div > a {}
+div + a{}
+div ~ a{}
+
+div a{
+color:#000;
+}
+
+
+selector 선택자
+1. 속성 선택: <input type = "text"> => []
+^ : 시작
+$ : 끝
+* : 포함하는 것
+2. class :.
+3. id : #
+
+
+
+
+res
+
+1. 반응형 사이트 : 방법론
+
+2. 해상도 : 미디어 쿼리를 이용해서 해상도 설정 후 작업
+Iphone 3 : 320px
+tap : 768px
+lap : 1280px
+-> desktop
+
+max-width(화면 크기 설정) : 기본은 내용크기 최대 max-width
+max-width : 100px; - 100px 이상 안커짐
+
+min-width : 최소 100px 최대 모니터 크기
+min-width : 100px;
+
+3. 화면 크기 : max-width, min-width
+(1) 내가 처음 작업을 laptop 맞춰서 작업을 한다면
+    lap -> tap -> mobile 순으로
+ 처음 해상도는 미디어 쿼리 생략 가능
+
+(2) mobile(min-width) 먼저 작업
+    mobile -> tap -> lap,desktop
+처음 해상도는 미디어 쿼리 생략 가능
+
+
+
