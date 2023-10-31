@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>속성 선택자</title>
+    <style>
+        /* 속성^="값" : 포함되는 것 */
+        /* a {
+            color: red;
+        } */
+
+        a[href ^="#"] {
+            font-style: italic;
+            font-weight: bold;
+            color: red;
+        }
+
+        a[href $=".kr"] {
+            color: aqua;
+        }
+
+        a[href *= "example"] {
+            color: gold;
+        }
+
+
+    </style>
+</head>
+<body>
+    <ul>
+        <li><a href="#naver">시작하는 것</a></li>
+        <li><a href="https://hrd.go.kr">끝나는 것</a></li>
+        <li><a href="https://www.example.com">포함되는 것</a></li>
+    </ul>
+</body>
+</html>

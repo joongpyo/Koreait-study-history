@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">  
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하위 선택자(모두)</title>
+    <style>
+        /* 하위 선택자(전부) : 띄어쓰기 */
+        .wrap p{
+            font-size: 25px;
+        }
+
+        /* 자식 선택자(바로 밑에 있는 것만) */
+        .span {
+            background-color: gold;
+        }
+
+        .box>span{
+            background-color: red;
+        }
+
+        /* + 인접 선택자 : 옆에 있는 태그 */
+        ul li:first-child + li {
+            color: red;
+        }
+
+    </style>
+</head>
+
+<body>
+    <ul>
+        <li>List 1</li>
+        <li>List 2</li>
+        <li>List 3</li>
+    </ul>
+
+    <div class="wrap">
+        <h1>페이지 설명</h1>
+        <p>코리아아이티</p>
+        <p>부산광역시</p>
+    </div>
+
+    <div class="box">
+        <span>
+            코리아아이티
+            <span>아카데미 입니다.</span>
+       </span>
+    </div>
+</body>
+</html>
