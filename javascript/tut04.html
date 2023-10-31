@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dom</title>
+
+    <style>
+        header {
+            width: 100%;
+            height: 300px;
+        }
+    </style>
+</head>
+<body>
+    <header>koreait</header>
+    <!-- <button>Click Me</button> -->
+    <button class="btn1">OnClick</button>
+    <button class="btn2">AddEvent</button>
+
+    <script>
+        let header = document.querySelector("header");
+        let btn1 = document.querySelector(".btn1");
+        let btn2 = document.querySelector(".btn2");
+
+        function clrChange() {
+            header.style.backgroundColor = "red";
+            
+        }
+        btn1.onclick = clrChange;    
+
+
+        function boldChange() {
+            header.style.fontWeight = "bold";
+            header.style.fontSize = "50px";
+        }
+
+        //이벤트 명시
+        btn2.addEventListener('click', boldChange)
+    </script>
+</body>
+</html>
