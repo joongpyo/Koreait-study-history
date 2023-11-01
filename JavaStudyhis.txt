@@ -4364,3 +4364,57 @@ min-width : 100px;
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+오전 8:51 2023-11-01******************************************
+
+html, css, js (json, ajax-백엔드) + db + spring
+- 코드 정렬, ppt => 이력서, 자기소개서, 기술 경력서
+
+11.20 스프링 부트 
+1. 관리자 페이지 : 반응형
+게시판 - 회원가입 -> 다중게시판
+
+
+-----------------------------------
+tut06
+get
+<p>코리아아이티</p>
+add
+
+숨기기 */
+            /* visibility: hidden; */
+            /* display: block; */
+            /* display: none; */
+
+
+
+
+flex-direction: row : 왼쪽에서부터 오른쪽으로 배치
+ flex-direction: column : 위에서 아래로 배치
+
+pc ->모바일 로 테스트
+flex: 1;
+flex-grow 늘릴때
+flex-shrink 줄일때
+
+
+
+
+
