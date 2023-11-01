@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classList.Toggle("클래스명")</title>
+    <style>
+        .hide{
+            /* display: none; */
+            visibility: hidden;
+    
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <img src="images/gamst.png" alt="감스트">
+    </div>
+    <button>Toggle예제 (버튼 하나로 보임 보임/숨김)</button>
+    
+    <script>
+        function toggleImg(){
+            document.querySelector(".box img").classList.toggle("hide");
+        }
+
+        document.querySelector("button").onclick=toggleImg;
+    </script>
+</body>
+</html>
