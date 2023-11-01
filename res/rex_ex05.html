@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex wrap : 너비 전제 아이템 크기보다 작으면</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        .flex-container {
+            background-color: #ccc;
+            display: flex;
+            flex-wrap: nowrap;
+            flex-wrap: wrap;
+        }
+
+        .item{
+            width: 150px;
+            height: 150px;
+            margin: 10px;
+            background-color: #254de4;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item">아이템1</div>
+        <div class="item">아이템2</div>
+        <div class="item">아이템3</div>
+        <div class="item">아이템4</div>
+        <div class="item">아이템5</div>
+        <div class="item">아이템6</div>
+        <div class="item">아이템7</div>
+        <div class="item">아이템8</div>
+        <div class="item">아이템9</div>
+        
+    </div>
+</body>
+</html>

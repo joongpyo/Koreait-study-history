@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>flex-grow: 비율</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .flex-container{
+            background-color: #ccc;
+ 
+            max-width: 1280px;
+            margin: 0 auto;
+            
+            /* pc 해상도 제외하고 전체 화면 - pc에서는 1280 해상도 설정
+            해상도 줄였을 때 스크롤 바 나오면 절대x */
+            width: 100%;
+            display: flex;
+            flex-direction: row;
+        }
+
+        .item {
+            width: 100px;
+            height: 100px;
+            background-color: #254de4;
+            color: #fff;
+            margin: 10px;
+
+            /* 
+                모바일 화면에서는 아이템에 지정한 넓이로 되어있다가
+                해상도를 늘리면 똑같은 비율로 확대 33.33% 
+            */
+            /* flex-grow:1; */
+
+        }
+
+        .item:nth-child(1){
+            flex-grow: 1;
+        }
+
+        .item:nth-child(2){
+            flex-grow: 5;
+        }
+
+        .item:nth-child(3){
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="flex-container">
+        <div class="item">Item 1</div>
+        <div class="item">Item 2</div>
+        <div class="item">Item 3</div>
+    </div>
+</body>
+</html>
