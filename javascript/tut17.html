@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>checkBox 이름이 달라도 되지만 일반적으로 같은 이름을 쓴다.</title>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>취미</legend>
+            <p>취미를 선택하시오.</p>
+            <label for=""><input type="checkbox" name="hobby" value="climbing">등산</label>
+            <label for=""><input type="checkbox" name="hobby" value="fishing" >낚시</label>
+            <label for=""><input type="checkbox" name="hobby" value="reading"checked>독서</label>
+            <p>
+                <input type="submit" class="btn" value="취미선택">
+            </p>
+        </fieldset>
+    </form>
+
+    <script>
+        // console.log(document.querySelectorAll("input[name=hobby]").length);
+        // console.log(document.querySelectorAll("input[name=hobby]:checked").length);
+
+        // 체크된 것이 있다면 첫 번째 값은?
+
+        // console.log(document.querySelectorAll("input[name=hobby]:checked")[0].value);
+
+        document.querySelector(".btn").addEventListener('click',function(e){
+            e.preventDefault();
+           
+            let cnt = 0;
+        for(let i = 0; i < document.querySelectorAll("input[name=hobby]").length; ++i){
+            if(!document.querySelectorAll("input[name=hobby]:checked")){
+                cnt++;
+            }
+        }
+        if(cnt == 0){
+            alert("취미는 1개 이상 선택해야 합니다.");
+            return false;
+            
+        }
+
+        })
+
+        
+
+        
+    </script>
+</body>
+</html>
