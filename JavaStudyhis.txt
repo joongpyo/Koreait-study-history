@@ -4418,3 +4418,69 @@ flex-shrink 줄일때
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+오전 9:01 2023-11-02****************************************************
+
+참고자료
+사용자페이지
+website template
+responsive template
+
+관리자페이지
+admin dashboard
+dashboard template
+login template
+
+구글 머티리얼
+google material
+style -> color
+
+
+
+기능
+function boxChange(){
+           document.querySelector(원 클래스명).classList.toggle(변경 클래스명);
+        }
+
+실행
+        document.querySelector("button").onclick = boxChange;
+
+
+addEventListener 사용시
+기능
+function 함수명(e){
+            e.preventDefault();
+            document.body.classList.toggle(변경 클래스명);
+        }
+실행
+        document.querySelector(버튼).addEventListener('click',함수명);
+
+ document.querySelector("input[type=submit]").addEventListener("click",function (e){
+            e.preventDefault();
+            if(frm.elements.userid.value ==""){
+                alert("아이디를 입력하세요");
+                frm.elements.userid.focus();
+                return false;
+            }
+        })
+
+
+
+
+
