@@ -4484,3 +4484,37 @@ function 함수명(e){
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+오전 11:01 2023-11-03*******************************************************
+
+플렉스는 넣을 곳 위
+
+
+
+background-color: transparent; /*투명하게*/
+select > option > value
+
+ table > thead(첫줄),tbody(몸통) > tr(줄) > th, td(칸)
+tr:nth-child(even){ /*짝수마다 색상 넣기 홀수는 odd*/
+border-collapse: collapse; /*두줄 제거*/
+position: relative: 내가 편한쪽으로 당겨씀
+
+td::before(앞쪽), td::after(뒤쪽)
+position: absolute: 왼쪽 기준
+left: 0; /*왼쪽으로 밀착*/
+content: attr
+
+
