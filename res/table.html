@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>게시판 table</title>
+    <link rel="stylesheet" href="./css/reset.css">
+    <style>
+        /* pc */
+        
+        .container {
+            width: 100%;
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+       
+        table{
+            width: 100%;
+            border-collapse: collapse; /*두줄 제거*/
+        }
+
+
+        th{
+            background-color: #254de7;
+            color: #fff;
+        }
+
+        th, td {
+            border: 1px solid #ccc;
+            text-align: center;
+            font-size: 14px;
+            padding: 15px 0;
+        }
+
+        tr:nth-child(even){ /*짝수마다 색상 넣기 홀수는 odd*/
+            background-color: #f7f7f7;
+        }
+
+        /* mobile 600px */
+        @media (max-width: 600px) {
+          thead {
+            display: none;
+          }
+
+          tbody,tr,td{
+            display: block;
+          }
+
+          tr{
+            margin-bottom: 20px;
+          }
+
+          td {
+            text-align: right;
+            position: relative; /*내가 편한쪽으로 당겨씀*/
+            padding-right: 20px;
+            
+          }
+
+          td::before {
+            content: attr(data-label);
+            position: absolute; /*왼쪽 기준*/
+            left: 0; /*왼쪽으로 밀착*/
+            padding-left: 20px;
+            font-weight: bold;
+          }
+        }
+    </style>
+</head>
+<body>
+    <!-- table > thead(첫줄),tbody(몸통) > tr(줄) > th, td(칸) -->
+    <div class="container">
+        <table>
+            <thead>
+                <tr>
+                    <th>No</th>
+                    <th>Subject</th>
+                    <th>Writer</th>
+                    <th>Regdate</th>
+                    <th>Marks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td data-label="No">4</td>
+                    <td data-label="Subject">Notice Board.</td>
+                    <td data-label="Writer">Admin</td>
+                    <td data-label="Regdate">2023.11.03</td>
+                    <td data-label="Marks">Update/Delete</td>
+                </tr>
+                <tr>
+                    <td data-label="No">3</td>
+                    <td data-label="Subject">image Board.</td>
+                    <td data-label="Writer">Admin</td>
+                    <td data-label="Regdate">2023.09.13</td>
+                    <td data-label="Marks">Update/Delete</td>
+                </tr>
+                <tr>
+                    <td data-label="No">2</td>
+                    <td data-label="Subject">QnA Board.</td>
+                    <td data-label="Writer">Admin</td>
+                    <td data-label="Regdate">2023.02.03</td>
+                    <td data-label="Marks">Update/Delete</td>
+                </tr>
+                <tr>
+                    <td data-label="No">1</td>
+                    <td data-label="Subject">review Board.</td>
+                    <td data-label="Writer">Admin</td>
+                    <td data-label="Regdate">2023.01.19</td>
+                    <td data-label="Marks">Update/Delete</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</body>
+</html>
