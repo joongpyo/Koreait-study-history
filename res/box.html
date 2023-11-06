@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <style>
+        .container{
+            background-color: #f0f0f0;
+        }
+
+        .boxes{
+            width: 100%;
+            max-width: 1280px;
+            margin: 0 auto;
+
+            display: flex;
+            flex-direction: row;
+        }
+
+        .box {
+            background-color: #fff;
+            margin: 25px 12px;
+            padding: 48px 32px;
+            border-radius: 4px;
+            text-align: center;
+            box-shadow: 0 1px 2px 0 rgba(90,91,95,0.1);
+            /*부드럽게 : transition*/
+            transition: all .3s ease-in-out;
+        } 
+
+        .box:hover{
+            box-shadow: 0 21px 20px -2px rgba(217,217,217,1);
+            cursor: pointer;
+            transform: translateY(-4px);
+        }
+
+        .box h2{
+            font-size: 20px;
+            margin-bottom: 10px;
+        }
+
+        .box .line{
+            background-color: tomato;
+            width: 45px;
+            height: 3px;
+            margin: 15px auto;
+            
+        }
+
+        @media (max-width:768px) {
+           
+        .boxes{
+            /* flex-direction: column; */
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        .box {
+            background-color: #fff;
+            margin: 24x 12px;
+            padding: 48px 32px;
+            border-radius: 4px;
+            text-align: center;
+            box-shadow: 0 1px 2px 0 rgba(90,91,95,0.1);
+            /*부드럽게 : transition*/
+            transition: all .3s ease-in-out;
+        } 
+
+        .box:hover{
+            box-shadow: 0 21px 20px -2px rgba(217,217,217,1);
+            cursor: pointer;
+            transform: translateY(-4px);
+        }
+
+        .box h2{
+            font-size: 30px;
+            margin-bottom: 10px;
+        }
+
+        .box .line{
+            background-color: tomato;
+            width: 45px;
+            height: 3px;
+            margin: 15px auto;
+        }
+        
+        }
+
+        @media (max-width:500px) {
+            .boxes{
+            /* flex-direction: column; */
+            display: grid;
+            grid-template-columns: repeat(1, 1fr);
+        }
+
+        .box h2{
+            font-size: 40px;
+            margin-bottom: 10px;
+        }
+
+        }
+        
+    </style>
+</head>
+<body>
+    <div class="container">
+        <section class="boxes">
+            <div class="box">
+                <h2>Resposive Design</h2>
+                <div class="line"></div>
+                <p class="text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Consequatur reiciendis corrupti,
+                    assumenda eveniet voluptates minus deserunt
+                </p>
+            </div>
+            <div class="box">
+                <h2>HTML 5</h2>
+                <div class="line"></div>
+                <p class="text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Consequatur reiciendis corrupti,
+                    assumenda eveniet voluptates minus deserunt
+                </p>
+            </div>
+            <div class="box">
+                <h2>24 HOUR SUPPORT</h2>
+                <div class="line"></div>
+                <p class="text">
+                    Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+                    Consequatur reiciendis corrupti,
+                    assumenda eveniet voluptates minus deserunt
+                </p>
+            </div>
+        </section>
+    </div>
+</body>
+</html>
