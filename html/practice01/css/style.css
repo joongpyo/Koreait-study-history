@@ -1,0 +1,60 @@
+@charset 'utf-8';
+/* header */
+.header-top {
+    background-color: teal;
+    width: 100%;
+    
+}
+.header-wrap {
+    background-color: aquamarine;
+    width: 1400px;
+    height: 50px;
+    margin: 0 auto;
+}
+
+.headerTop-wrap {
+    display: flex;
+    justify-content: space-between;
+}
+
+.head-left {
+    width: 100px;
+    height: 50px;
+}
+
+.head-right {
+    /* background-color: red; */
+    display: flex;
+}
+
+ul li:nth-child(1){
+    margin-right: 10px;
+}
+
+
+
+.header-menu {
+    width: 1400px;
+    height: 100px;
+    background-color: bisque;
+    display: flex;
+    justify-content: end;
+}
+
+.menu {
+    display: flex;
+}
+
+
+
+
+
+/* ----------------------- main -----------------------*/
+
+/*----------------------- footer-----------------------*/
+
+.footer-wrap{
+    width: 100%;
+    height: 150px;
+    background-color: aqua;
+}
