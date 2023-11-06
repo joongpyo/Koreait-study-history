@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul li{
+            list-style: none;
+        }
+    </style>
+</head>
+<body>
+    <ul id="items">
+        <li>html/css/javascript</li>
+        <li>dtabases</li>
+    </ul>
+
+    <form>
+        <input type="text" class="content">
+        <button>원하는 위치에 추가</button>
+    </form>
+
+    
+    <script>
+        //노드 트리 만들기.
+        //1. createElement()로 태그 만들어 주기
+        //2. createTextNode()로 텍스트 만들기
+        //3. 1+2번 연결하기
+        //4. 배치하기
+        //ex) <li>글자</li>
+
+        document.querySelector("button").addEventListener('click',function(e){
+            e.preventDefault();
+            let addTag = document.createElement("li");
+            let content = document.querySelector(".content");
+            let addText = document.createTextNode(content.value);
+
+            addTag.appendChild(addText); //1+2번 연결
+
+            if(!content.value){
+                alert("내용을 입력하세요.")
+                content.focus();
+                return false;
+            }else{
+                content.value="";
+                document.querySelector("ul#items").appendChild(addTag);
+                content.focus();
+                return false;
+
+                
+            }
+
+        });
+    </script>
+</body>
+</html> 
