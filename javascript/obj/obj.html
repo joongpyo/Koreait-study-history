@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        //디비 레코드(튜플) = row
+        //한명 데이터
+        //json객체 = javascript 객체
+        let user = {
+        userid: "koreait",
+        passwd:"1234"
+        }
+
+        let user1 = {};
+        user1 = new Object();
+        user1.email = "mail@email.com"
+        user1.addr = "부산광역시";
+
+        console.log(user1)
+        console.log(user1.email);
+        console.log(user1.addr);
+
+        console.log("-----------------")
+
+        console.log(user); //객체 전체 출력
+        console.log(user.userid);
+        console.log(user.passwd);
+
+        console.log(user["userid"]);
+        console.log(user["passwd"]);
+
+        // let users = [
+        //     {
+        //         username:"홍길동",
+        //         addr:"부산광역시"
+        //     },
+        //     {
+        //         username: "이영희",
+        //         addr:"서울특별시"
+        //     }
+        // ];
+    </script>
+</body>
+</html>
