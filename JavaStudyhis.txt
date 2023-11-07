@@ -4572,3 +4572,70 @@ appendChild
 
 flex-direction: column
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+오전 9:03 2023-11-07****************************************
+
+insertTree01.html
+
+p
+---------------------->
+p
+p
+
+기준값, 작업코드
+
+
+modal div -> javascript
+
+pop up html -> javascript
+
+
+obj
+-obj01.html
+
+:not(:last-child)
+text-transform: capitalize 첫글자 대문자
+vw,vh : 현재보는 모니터 해상도에 맞춰서 보인다
+백그라운드 사진 삽입시 필수 css
+background-repeat: no-repeat;
+background-position: center;
+background-size: cover;
+height: 100vh;
+
+css 변수선언: 
+:root{
+--변수명: 설정}
+
