@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let user = {
+            userid: "busan",
+            name: "김이름",
+            passwd:"1234"
+        };
+
+        console.log(user.userid);
+        console.log("------------");
+        //[]forEach   배열명.forEach()
+        //{}for ~ in = 향상된 for와 비슷
+        for(key in user){
+            // console.log(key); key
+            console.log(user[key]); //value
+        }
+
+    </script>
+</body>
+</html>
