@@ -4639,3 +4639,37 @@ css 변수선언:
 :root{
 --변수명: 설정}
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+오후 2:05 2023-11-08******************************************
+
+디비 레코드(튜플) = row
+[]forEach   배열명.forEach()
+{}for ~ in = 향상된 for와 비슷
+for(별명(key) in 객체명) { //k, key
+for(k in obj){
+             console.log("키값"+ obj[k]); // obj[k]
+             console.log(`키에 해당되는 값: ${k}`); //k
+        /    console.log("");
+배열명.forEach( (별명) => {
+         출력코드          
+         });
+indexOf-> 숫자
+includes() -> boolean
+
+이름.split("구분자") -> 배열로 리턴
+[이름] = new Array(값...)
+
