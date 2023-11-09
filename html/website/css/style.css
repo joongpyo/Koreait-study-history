@@ -19,13 +19,16 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior:smooth;
+}
+
 ul li {
     list-style: none
 }
 
 img{
     width: 100%;
-    height: 100%;
     object-fit: cover;
 }
 
@@ -41,15 +44,15 @@ body {
 
 
 
+
 /*------------------------- nav css --------------------------*/
 
 nav{
-    padding: 35px 15px;
+    padding: 30px 15px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
-    /* background-color: aqua; */
 }
 
 .container {
@@ -80,6 +83,9 @@ ul li {
     display: none;
 }
 
+/*------------------------- // nav css --------------------------*/
+
+
 
 
 /*------------------------- header css --------------------------*/
@@ -96,7 +102,8 @@ header {
 }
 
 .section__container{
-    max-width: 1280px;
+    width: 100%;
+    max-width: var(--max-width);
     margin: 0 auto;
     display: flex;
     align-items: center;
@@ -144,3 +151,100 @@ header {
     cursor: pointer;
 }
 
+/*------------------------- // header css --------------------------*/
+
+
+
+/*------------------------- main css --------------------------*/
+
+section.one{
+    background-color: #e8f1fa;
+    padding: 30px 0;
+}
+
+.journey__container {
+    width: 100%;
+    max-width: var(--max-width);
+    margin: 0 auto;
+    padding: 80px 15px;
+}
+
+.journey__title h2{
+    font-size: 32px;   
+    color: #669ccb;
+    margin-top: 30px;
+    text-align: center;
+}
+
+.journey__title p{
+    font-size: 16px;
+    font-style: italic;
+    color: #669ccb;
+    margin-bottom: 80px;
+    text-align: center;
+}
+
+.journey__content {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+}
+
+.country_box {
+    background-color: #f3f4f6;
+    box-shadow: 0 1px 2px 0 rgba(90, 91, 95, 0.1);
+    transition: all .3s ease-in-out;
+}
+
+/* .country_box:hover{
+    transform: translateY(-8px);
+} */
+
+.country_name {
+    padding: 1rem;
+    display: flex;
+    color: #767268;
+    cursor: pointer;
+    font-weight: 600;
+    
+}
+
+.country_name i{
+    font-size: 1.2rem; /*반응형 19.2px | 1.2 * 16 = 19.2 |*/
+    margin-right: 4px;
+}
+
+.country_name span{
+    font-style: italic;
+}
+
+.active {
+    transition: var(--transition);
+}
+
+
+/*------------------------- anchor css --------------------------*/
+
+
+.go-up{
+    width: 35px;
+    height: 35px;
+    background-color: #3b79c9;
+    color: var(--primary-color);
+    font-size: 1.125rem;
+    border-radius: 5px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.5);
+
+    position: fixed;
+    bottom: 25px;
+    right: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: var(--transition);
+}
+
+.view {
+    opacity: 1; /*투명*/
+}
