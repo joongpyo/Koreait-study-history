@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>매개변수가 있는 함수</title>
+</head>
+<body>
+    <script>
+    // 매개변수로 2개(이름, 메시지)를 전달 받아 출력하는 함수 
+     function welcome(name, msg){
+        console.log(`${name}님, ${msg}하세요.`);
+    }
+
+    welcome("김휴먼", "안녕");
+
+    console.log("");
+
+    function hello(name, msg){
+        return `${name}님, ${msg}하세요.`;
+    }
+    console.log(hello("홍찰찰","hi"));
+    </script>
+</body>
+</html>

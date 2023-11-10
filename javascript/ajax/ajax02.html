@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spring에서 데이터 가져오기</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <style>
+        p {
+            font-style: italic;
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <p></p>
+
+    <button class="receive">데이터 가져오기</button>
+    <br /><br /><br /><br />
+    <button class="send">데이터 서버로 보내기(스프링 확인)</button>
+
+    
+
+    <script>
+        document.querySelector(".send").addEventListener('click',function(){
+            let buseo = {
+                code: "100",
+                name: "인사과"
+            };
+
+            $.ajax({
+                //get , 주소:setData ,전송 타입 json, 전송데이터, success:fucntion(){}
+                type:"get",
+                url: "http://localhost:8989/setData",
+                dataType: "json",
+                data: buseo, //{code: 100,name: "인사과"};
+                success: function(result){
+                    if(result.msg == "success"){
+                        alert("데이터 전송이 완료되었습니다.")
+                    }else {
+                        alert("데이터 전송에 실패했습니다.")
+                    }
+                }
+            });
+
+        });
+        
+        
+        
+        document.querySelector(".receive")
+        .addEventListener('click',function(){
+           
+            // 전송타입, 주소(포트번호), 데이터통신방법, success()
+            $.ajax({
+                type: "post",
+                url: "http://localhost:8989/getData",
+                dataType: "json",
+                //spring 데이터는 매개변수로 넘어온다.
+                success: function(result){
+                    console.log(result);  //데이터가 넘어오는지 체크
+                    console.log(result.email);
+                    console.log(result.passwd);
+                    document.querySelector("p").innerText
+                    = `이메일: ${result.email}, 비밀번호: ${result.passwd}, 이름:${result.name}, 나이:${result.age}`;
+                }
+
+            });
+
+        });
+    </script>
+</body>
+</html>
