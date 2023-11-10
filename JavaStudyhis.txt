@@ -4827,3 +4827,206 @@ if(myPos > 300) : 만약 내 위치가 300px보다 클 때
 else{up.classList.remove("view")} : 내위치가 300px보다 작으면 버튼이 사라지게 함
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+오전 9:01 2023-11-10*******************************************************************************************
+
+오라클
+
+부서: dept
+코드, 이름
+create table dept(
+dept_code varchar2(3),
+dept_name varchar2(10),
+primary key(dept_code)
+);
+
+insert into dept values('100', '인사과');
+insert into dept values('200', '자재과');
+insert into dept values('300', '비서실');
+insert into dept values('900', '임원실');
+
+시퀀스 emp_seq
+create sequence emp_seq 
+start with 1
+increment by 1
+minvalue 1
+maxvalue 9999
+nocycle
+nocache;
+
+사원등록 emp
+create table emp(
+emp_num number not null,
+emp_name varchar2(10),
+emp_passwd varchar2(20),
+emp_height number(5,2),
+emp_gender char(1),
+emp_regdate date,
+dept_code_fk varchar2(3),
+primary key(emp_num),
+foreign key(dept_code_fk) references dept(dept_code)
+);
+
+insert into emp values(emp_seq.nextval, '홍길동', '1111', 190.12, 'M', sysdate, '100');
+insert into emp values(emp_seq.nextval, '이영희', '2222', 160.12, 'M', sysdate, '200');
+insert into emp values(emp_seq.nextval, '김철수', '3333', 180.12, 'M', sysdate, '300');
+시퀀스번호, 이름, 비번, 키, 성별, 날짜
+
+
+
+1개만 출력
+select * from emp where rownum <= 1;
+select * from emp where rownum <= 2 order by emp_num desc;
+
+내부 쿼리
+select * from (select * from emp order by emp_num desc)
+where rownum <= 2;
+
+inner join ~ on
+
+dept,  emp
+
+내부조인
+select * from dept D inner Join emp E on D.dept_code = E.dept_code_fk;
+
+select D.dept_name from dept D inner Join emp E on D.dept_code = E.dept_code_fk;
+
+조인 > 그룹화
+인사과(1), 자재과(1), 비서실(1)
+
+사원 수가 10명 이상인 부서(사원수)를 표시하시오.
+select D.dept_name, count(E.emp_num) from dept D inner join emp E on D.dept_code = E.dept_code_fk group by D.dept_code, D.dept_name
+having count(E.emp_num) >= 1;
+
+--------------------------------------------------
+intelli j
+
+스프링 + 웹(서버: tomcat)
+
+1. tomcat 별도 설치-> Spring framework
+2. 내장형 tomcat -> Spring Boot4
+   - 과정형 자격증 웹 : jsp + oracle
+
+2. tools
+jetBrain
+intelli j(community ver, ulti ver)
+
+ibm
+eclipse - sts
+
+-> android studio
+
+
+-------------------------------
+view
+ajax -> javascript -> jquery(추가 라이브러리)
+
+server -> 
+스프링부트에서 사용할 내장형 tomcat 또는 추가 프로그램
+web(필수) , lombok, thymeleaf(html+추가프로그램), mysql
+maven 데이터베이스 + 스프링 연결
+- @ 어노테이션: 부트 ver.3.0
+- xml 
+-> start.spring.io
+
+
+도메인: 
+
+src
+java -> 자바파일
+resources
+ - static : css js images
+ - template : html
+application 서버 설정
+
+
+
+----------intelli j 초기 설정 순서---------------------
+- ajax
+- src
+- main
+- java
+com.example.ajax
+패키지 생성: controller : 주소관리 또는 파일 전달
+클래스 생성: AjaxController(.java)
+
+- 포트번호 변경
+resources
+application.properties
+server.port = 바꿀포트번호 (원 localhost:8080)
+
+------- /intelli j 초기 설정 순서----------------
+
+
+
+
+https://도메인:9999/실행주소
+알려진 포트번호는 보안 상 문제가 되어 포트번호 변경함
+7000 ~ 9999
+
+localhost:9999/register
+localhost:9999/login
+localhost:9999/welcome
+localhost:9999/getjs	
+
+<a href = "/getjs">저장</a>
+a 태그로 만들어진 것 또는
+브라우저 주소 뒤에 드러나도 문제없는
+<form method="get">
+
+<form method="post">
+
+a = get 또는 post 
+서버(spring) <- json -> 클라이언트(html, js)
+
+localhost:9999/hello 하면 hello 메소드 실행
+
+@Controller
+AjaxController클래스안에서 메소드위에: 
+@GetMapping: get함
+@ResponseBody:  json으로 보냄
+@CrossOrigin : 다른 프로그램간의 연결
+
+
+jquery.com
+download
+google cdn 중간 링크 복사해서 style 밑에 붙혀넣기
+
+
+웹: 프로그램이 다르면 접근x
+
+보완레이어
+ssl: 서버에 설치
+https://
+http://
+
