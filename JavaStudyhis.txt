@@ -5186,3 +5186,66 @@ repository -> 데이터 출력
 thymeleaf 선언문
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+오전 10:31 2023-11-14********************************
+
+주소관리
+
+관리자 페이지 /admin 시작
+- 사원목록 : /admin/empList
+
+사용자 페이지 /users 시작
+- 로그인 /users/login
+- 회원가입/ users/register
+
+사이트 첫 페이지는 /web
+사이트 회사소개 /web/company
+
+html > controller
+
+artifact 이름 아래에 패키지 생성
+controller
+- WebController
+dto
+service
+mappers
+
+코리아아이티 여행 사이트 | koreait.co
+
+
+@RequestMapping("/web") : web 생략 가능
+
+
+templates
+index.html
+-  admin
+   /admin/admin
+   /admin/employees
+   /admin/article
+   /admin/site
+
+- users
+
+
+
+
+
+
+
+
+
