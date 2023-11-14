@@ -5030,3 +5030,159 @@ ssl: 서버에 설치
 https://
 http://
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+오전 9:01 2023-11-13************************************
+
+부서 테이블 시퀀스
+create table buseo(
+buseo_code varchar2(3) not null primary key,
+buseo_name varchar2(30) not null
+);
+
+select * from tab;
+
+insert into buseo values('100','인사과');
+insert into buseo values('200','자재과');
+insert into buseo values('300','비서실');
+
+select * from buseo;
+                                                                             
+사원 테이블 -> 시퀀스
+
+create table emp(
+emp_num number not null,
+emp_kor_name varchar2(10),
+emp_eng_name varchar2(20),
+emp_jumin char(14),
+emp_gender char(1),
+emp_point number(3, 2),
+emp_regdate date,
+primary key(emp_num)
+);
+
+create sequence emp_seq
+start with 1
+increment by 1
+minvalue 1
+maxvalue 9999
+nocycle;
+
+insert into emp values(emp_seq.nextval, '홍길동', 'hong gil-dong', '001234-1234567', 'M', 1.24, sysdate);
+insert into emp values(emp_seq.nextval, '김부산', 'kim busan', '201234-1234567', 'M', 2.24, sysdate);
+insert into emp values(emp_seq.nextval, '나서울', 'na seoul', '301234-1234567', 'F', 3.14, sysdate);
+
+이름이 김부산, 나서울 출력
+select * from emp where emp_kor_name = '김부산' or
+emp_kor_name = '나서울';
+
+select * from emp where emp_kor_name not in('김부산','나서울');
+
+select * from emp where emp_kor_name != '김부산' and
+emp_kor_name != '나서울';
+
+영문자 대/소문자 변환
+
+select upper(emp_eng_name) from emp;
+
+select lower(emp_eng_name) from emp;
+
+첫글자만 대문자
+select initcap(emp_eng_name) from emp;
+
+좌우공백 제거
+trim()
+
+select trip(emp_eng_name) from emp;
+
+좌우공백제거하고 영문자 대/소문자 변환, 첫글자만 대문자
+select upper(trim(emp_eng_name)) from emp;
+
+왼쪽 1글자만 
+left(값,1)
+
+문자열 길이 체크: 데이터베이스에서 처리하는 방식에 따라 값이 다를 수 있음
+select emp_eng_name, length(emp_eng_name) from emp;
+
+select emp_kor_name, lengthb(emp_kor_name) from emp;
+
+개수 출력
+mysql
+정렬 limit 개수
+정렬 limit 시작, 개수
+
+oracle
+정렬 fetch first 개수 rows only;
+정렬 fetch 시작번호 row fetch first 개수 rows only; 
+
+select * from emp order by emp_num desc fetch first 1 rows only;
+
+select * from emp order by emp_num desc offset 1 rows fetch first 1 rows only;
+
+
+
+m을 '남'으로 바꾸시오 (값, 바꿀값)
+select replace('emp_gender', '남') from emp;
+
+select replace(emp_gender, 'M', '남') from emp;
+
+ceil -> +면 올림한 값, -내림값
+
+floor -> +면 내림값, - 올림값
+
+select emp_point, ceil(emp_point) from emp;
+
+select emp_point, floor(emp_point) from emp;
+
+select emp_point, ceil(emp_point), floor(emp_point) from emp;
+
+날짜를 yyyy.mm.dd로 표시하시오.
+select emp_regdate from emp;
+
+select to_char(emp_regdate, 'yyyy.mm.dd hh.mm.ss') from emp;
+
+Ajax-----------------------------------
+start.spring.io -> web 의존성관리(프로그램 설치) 필수
+- html 작업 : thymeleaf
+- 객체 작업 생략 : lombok
+
+TestController.java
+
+
+
+패키지(프로그램 동작 x)
+controller: 주소 또는 데이터 출력 또는 html로 전달
+@Controller = 주소관리
+@ResponseBody = 데이터관리
+= @RestController
+
+dto : 객체
+@Data
+
+service : 추가  작업이 필요할 때(paging)
+@Service
+
+mapper : 데이터베이스 자료 처리(dml)
+repository -> 데이터 출력
+
+
+thymeleaf 선언문
+
+
