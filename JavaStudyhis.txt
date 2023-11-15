@@ -5247,5 +5247,48 @@ index.html
 
 
 
+오전 8:59 2023-11-15*******************************************
+
+
+1. 게시판 -> 회원가입 -> 다중게시판 -> 사이트관리
+2. 메뉴 -> 데이터 전달 -> ajax
+
+vscode -> intellij
+
+html -> (db) -> 객체, controller -> mapper -> (service) => controller
+dto -> RegDto.java
+
+templates
+
+admin
+주소		 파일명
+/admin 		> /admin/index.html
+/admin/employees	>/admin/employees.html
+/admin/article 	> /admin/article.html
+
+
+
+users
+/users/login	> /users/login.html
+/users/register	> /users/register.html
+
+/		> index.html
+
+
+
+/users/register	/users/register
+
+controller
+- regcontroller.java
+
+dto
+- RegDto
+
+
+
+
+
+
+
 
 
