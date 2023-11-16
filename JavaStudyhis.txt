@@ -5292,3 +5292,69 @@ dto
 
 
 
+
+
+
+
+
+
+
+오전 9:02 2023-11-16*****************************************
+
+tut05
+html -> db ->  객체, Controller -> (service) -> mappers
+    emp_name -> empName
+
+출력은 역순
+
+Spring Query 사용하는 방법 mybatis
+
+
+properties
+
+- server 주소
+- mysql 설정
+     connector, url/dbName, id, passwd 순서
+
+사용자 이름, 비번 저장
+
+/users/insert	-	/users/insert.html
+/users/list		- 	/users/list.html
+
+db query 저장
+일반파일
+/static/koreatitdb.sql
+
+패키지
+/dto/UsersDto		.java
+
+interface : 본체가 없는 이름만 필요
+/mappers/UsersMapper	.java
+
+
+
+
+
+th:each="별명: ${controller 변수}}  html 태그안에서 for
+
+
+
+
+
+
+/member/list		/member/list.html
+/member/add		/member/add.html
+
+pk, 아이디, 비밀번호 static/db.sql
+
+tut06
+- controller
+- dto 
+- mappers
+- service
+
+
+
+
+
+
