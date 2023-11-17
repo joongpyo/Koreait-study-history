@@ -5358,3 +5358,47 @@ tut06
 
 
 
+
+
+
+
+
+
+
+오전 9:01 2023-11-17*****************************************
+
+1. 프로그래밍 스타일
+ - 변수 , 객체
+ - 변수, 리스트 -> map
+
+
+쇼핑몰 shop
+ajax, thymeleaf, db, web
+타임리프 선언문
+<html xmlns:th="http://www.thymeleaf.org">
+**crud
+
+관리자
+/admin/addItem	=> /shop/addItem.html   *
+/admin/deleteItem	=> /shop/delelteItem.html
+/admin/updateItem	=> /shop/updateItem.html  *
+
+사용자
+/users		=> /shop/itemList.html
+/users/view	=> /shop/view.html  *
+
+controller
+dto
+mappers 인터페이스
+service	구현
+
+html -> db생성 -> 객체, controller -> (service) -> mappers
+
+list : 목록, 상품수
+
+QueryString
+delete?num=1
+view?num=1
+
+
+
