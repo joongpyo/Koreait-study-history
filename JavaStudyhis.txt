@@ -5402,3 +5402,39 @@ view?num=1
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+오전 9:03 2023-11-21*****************************
+
+1. 회원가입 + 로그인
+-  thymeleaf
+- ajax(x)
+- 디자인(x)
+
+artifact member
+
+/		index.html
+  /register		register.html
+  /login		login.html
+
+/member		/member/list.html
+member/insert	/member/insert.html
+/member/delete	/member
+/member/update	/member/update.html
+/member/view	/member/view.html
+
