@@ -23,4 +23,11 @@ public interface MemberMapper {
 
     @Delete("delete from member where id = #{id}")
     void deleteMember(int id);
+
+    @Select("select * from member where id = #{id};")
+    MemberDto viewMember(int id);
+
+    @Select("select * from member where userid = #{userid} and passwd = #{passwd};")
+    MemberDto setLogin(MemberDto memberDto);
+
 }

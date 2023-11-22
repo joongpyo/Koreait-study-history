@@ -7,11 +7,12 @@
 
 </head>
 <body>
-    <a th:href="@{/}">코리아아이티 메인 페이지</a>
-    <a th:href="@{/member/insert}">회원가입</a>
-    <a th:href="@{/login}">로그인</a>
-    <a th:href="@{/member}">회원목록</a>
 
+
+        <h1>[[${session.user.userid}]] / [[${session.user.username}]]</h1>
+
+
+<div th:insert="~{fragment/nav::nav_f}"></div>
     <h1>코리아아이티 회원목록 페이지입니다</h1>
 
     <p style="background-color: #0f0; color:#fff;"  th:text="${message}"></p>
@@ -42,18 +43,31 @@
         </tr>
         <tr th:each="m: ${mem}">
             <td>[[${m.id}]]</td>
-            <td>[[${m.userid}]]</td>
+            <td>
+                <a th:href="@{/member/view?(id=${m.id})}">
+                    [[${m.userid}]]
+                </a>
+
+            </td>
             <td>[[${m.passwd}]]</td>
-            <td>[[${m.username}]]</td>
+            <td>
+                <a th:href="@{/member/view?(id=${m.id})}">
+                     [[${m.username}]]
+                </a>
+            </td>
             <td>[[${m.regdate}]]</td>
             <td>
-                <button>보기</button>
+                <button th:onclick="viewMember([[${m.id}]])">보기</button>
                 <button>수정</button>
                 <button th:onclick="deleteMember([[${m.id}]])">삭제</button>
             </td>
         </tr>
     </table>
     <script>
+        function viewMember(mid){
+             location.href = 'member/view?id='+mid;
+        }
+
         function deleteMember(mid){
             if(confirm('회원정보를 삭제하시겠습니까?')){
                 location.href = 'member/delete?id='+mid;

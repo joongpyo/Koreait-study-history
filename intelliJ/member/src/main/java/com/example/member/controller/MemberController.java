@@ -57,5 +57,11 @@ public class MemberController {
         return "redirect:/member";
     }
 
+    @GetMapping("/view")
+    public String viewMember(@RequestParam int id, Model model){
+        model.addAttribute("mem", memberMapper.viewMember(id));
+        memberMapper.viewMember(id);
+        return "member/view";
+    }
 
 }

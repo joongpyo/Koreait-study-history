@@ -1,10 +1,37 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
+<html xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>코리아아이티 아카데미 > Member > View</title>
 </head>
 <body>
+<div th:insert="~{fragment/nav::nav_f}"></div>
+<h1>회원 상세보기 페이지</h1>
+<form autocomplete="off" method="post"  action="/member/insert" onsubmit="return frmCheck()">
+    <ul>
+        <li>
+            <label>번호</label>
+            [[${mem.id}]]
+        </li>
+        <li>
+            <label>아이디</label>
+            [[${mem.userid}]]
+        </li>
+        <li>
+            <label>비밀번호</label>
+            [[${mem.passwd}]]
+        </li>
+        <li>
+            <label>이름</label>
+            [[${mem.username}]]
+        </li>
+        <li>
+            <label>가입일</label>
+            [[${mem.regdate}]]
+        </li>
+    </ul>
+</form>
 
 </body>
 </html>

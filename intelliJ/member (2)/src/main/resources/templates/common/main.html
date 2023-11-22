@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="ko">
+<html xmlns:th="http://www.thymeleaf.org">
+<head th:insert="~{common/layout::head_f}"></head>
+<body>
+    <header th:insert="~{common/header::header_f}"></header>
+    <div th:replace="~{common/header::nav_f}"></div>
+    <hr />
+
+    <section>페이지 메인</section>
+
+    <hr />
+    <footer th:insert="~{common/footer::footer_f( 'Koreait Academy', '02.0000.0000') }"></footer>
+</body>
+</html>
