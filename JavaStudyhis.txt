@@ -5438,3 +5438,31 @@ member/insert	/member/insert.html
 /member/update	/member/update.html
 /member/view	/member/view.html
 
+
+
+
+
+
+
+
+
+오전 9:05 2023-11-22******************
+
+사이트
+
+CommonController
+common
+ 
+layout
+
+fragment
+- insert: 내용을 공유 <h1> 변경 </h1>
+- replace : 태그 전체를 공유 <h1></h1>
+
+* 공통 페이지 처리: view 전용 프로그램
+
+fragment
+- nav.html
+
+insert 방식
+
