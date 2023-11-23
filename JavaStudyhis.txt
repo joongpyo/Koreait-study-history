@@ -5464,5 +5464,42 @@ fragment
 fragment
 - nav.html
 
+
 insert 방식
+
+
+
+
+
+
+
+
+
+
+오전 11:04 2023-11-23******************************
+
+upload
+
+첨푸파일 -> form - enctype="multipart/form-data"
+
+upload 파일 밑 config -> WebConfig 
+- @Configuration //환경설정하는 클래스로 사용하라는 어노테이션
+- implements WebMvcConfiqurer를 구현받음
+
+
+
+html -> db생성 -> 객체, controller -> (service) -> mappers
+
+
+
+application.properties
+스프링부트가 애플리케이션을 구동할 때 자동으로 로딩하는 파일
+
+@Value어노테이션으로 값을 받아올수도 있음
+
+
+controller
+
+
+
 
