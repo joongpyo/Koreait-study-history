@@ -1,0 +1,43 @@
+medi_id
+   1. 감기
+   2. 감기몸살
+   3. 근육통
+   4. 인후통
+   5. 복통
+   6. 편두통
+   7. 생리통
+   8. 치통
+   9. 알레르기(비염)
+   10. 설사
+   11. 고열
+   12. 소화불량
+   13. 멀미
+
+
+create table medicine(
+medi_id int not null,
+medi_name varchar(50) not null,
+medi_image varchar(100) not null,
+disease varchar(50) not null,
+efficacy text not null,
+drug_type varchar(20) not null,
+company varchar(50) not null,
+conven_store varchar(1) not null,
+primary key(medi_id)
+);
+
+ex)
+insert into medicine values(1, "타이레놀160mg", "tylenol.jpg", "감기",  "감기로 인한 발열 및 두통, 신경통 등등", "알약", "한국얀센","Y");
+
+                    
+create table user(
+user_id int not null auto increments,
+user_name varchar(50) not null,
+gender varchar(1) not null,
+age int not null,
+reg_date date not null,
+primary key(user_id)
+);
+
+ex)
+insert into user values(null, "홍길동 ", "M", 24);
