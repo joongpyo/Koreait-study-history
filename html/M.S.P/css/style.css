@@ -25,6 +25,10 @@ img {
 
 
 
+
+
+
+
 /* -------------- header---------------- */
 
 .header-top {
@@ -91,6 +95,20 @@ img {
     
 }
 
+.search input{
+    border: 0;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.search button{
+    border: 0;
+    background-color: #fff;
+}
+
+.search i{
+    font-size: 16px;
+}
 
 
 
