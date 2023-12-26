@@ -1,0 +1,33 @@
+.sub-title-box{
+    /* margin-top: 0px;
+    margin-left: 10px;
+    margin-bottom: 30px; */
+    margin: 30px;
+    letter-spacing: 2px;
+    font-size: 16px;
+}
+
+.sub-title-box h2{
+    margin-left: 20px;
+    margin-bottom: 30px;
+    border-bottom: 1px solid #ccc;
+}
+
+.sub-title-box span {
+ color: rgba(0,0,0,0.7);
+}
+
+.sub-title-box a:hover {
+    color: #3A6190;
+}
+
+.sub-title-box strong{
+    text-decoration: underline;
+    color: rgba(0,0,0,0.8);
+
+
+}
+
+.sub-title-box i{
+     color: rgba(0,0,0,0.6);
+}
